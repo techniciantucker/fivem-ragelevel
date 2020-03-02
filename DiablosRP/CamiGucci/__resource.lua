@@ -1,0 +1,1 @@
+resource_manifest_version '77731fab-63cn-442c-a67b-abc70f20dfa5'
