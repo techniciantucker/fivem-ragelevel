@@ -1,0 +1,17 @@
+Locales['en'] = {
+  ['shop_robbery'] = 'Robo de Tienda',
+  ['press_to_rob'] = 'Presiona ~INPUT_CONTEXT~ para ~o~robar~s~ ~b~%s~s~',
+  ['robbery_timer'] = 'Robo de tienda: ~r~%s~s~ segundos restantes',
+  ['recently_robbed'] = 'Han saqueado esta tienda recientemente. Espera ~y~%s~s~ segundos para volver a robar',
+  ['robando'] = '~r~Se han disparado las alarmas en la tienda: ~b~%s~s~',
+  ['rob_in_prog'] = '~r~Robo de tienda: Alarmas disparadas en ~b~%s~s~',
+  ['started_to_rob'] = 'Has empezado a robar ~y~%s~s~',
+  ['alarm_triggered'] = 'Alarma Disparada! Securitas Direct ha avisado a toda la Policía!',
+  ['robbery_complete'] = '~r~GENIAL! Lo has conseguido!~s~ Has ~o~robado~s~ ~g~€%s~s~',
+  ['robbery_complete_at'] = '~r~Robo de tienda completado en: ~y~%s~s~',
+  ['robbery_cancelled'] = 'El robo se ha cancelado!',
+  ['robbery_cancelled_at'] = '~r~El robo de Tienda en ~b~%s~s~ se ha cancelado!',
+  ['min_police'] = 'Necesita haber almenos ~b~%s Policías~s~ en la ciudad para robar.',
+  ['robbery_already'] = '~r~Ya están robando otra tienda en este momento!',
+  ['no_threat'] = 'No muestras una amenaza al dependiente de la tienda',
+}

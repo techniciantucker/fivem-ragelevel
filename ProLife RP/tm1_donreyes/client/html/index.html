@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <!-- Need to include jQuery! -->
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script>
+            var audioPlayerA = null;
+
+            window.addEventListener('message', function(event) {
+            	if(event.data.transactionFile == 'padrino'){
+            	  audioPlayerA = new Audio("./sounds/padrino.mp3");
+                  audioPlayerA.volume = event.data.transactionVolume;
+                  audioPlayerA.play();
+            	}else if(event.data.transactionFile == 'reyes'){
+            		audioPlayerA = new Audio("./sounds/reyes.mp3");
+	                  audioPlayerA.volume = event.data.transactionVolume;
+	                  audioPlayerA.play();
+                 } else if(event.data.transactionFile == 'campanada'){
+                    audioPlayerA = new Audio("./sounds/campanada.mp3");
+                      audioPlayerA.volume = event.data.transactionVolume;
+                      audioPlayerA.play();
+                 } else if(event.data.transactionFile == 'asikause'){
+                    audioPlayerA = new Audio("./sounds/asikause.mp3");
+                      audioPlayerA.volume = event.data.transactionVolume;
+                      audioPlayerA.play();
+                 } else if(event.data.transactionFile == 'nico'){
+                    audioPlayerA = new Audio("./sounds/nico.mp3");
+                      audioPlayerA.volume = event.data.transactionVolume;
+                      audioPlayerA.play();
+				 } else if(event.data.transactionFile == 'rockefeller'){
+                    audioPlayerA = new Audio("./sounds/rockefeller.mp3");
+                      audioPlayerA.volume = event.data.transactionVolume;
+                      audioPlayerA.play();	  
+                 } else if(event.data.transactionFile == 'marcos'){
+                    audioPlayerA = new Audio("./sounds/marcos.mp3");
+                      audioPlayerA.volume = event.data.transactionVolume;
+                      audioPlayerA.play();
+                 } 
+            });
+        </script>
+    </head>
+</html>

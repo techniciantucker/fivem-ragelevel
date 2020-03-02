@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body {
+
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  display: none;
+}
+
+
+#background {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 797px;
+	height: 400px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: url('pc.jpg');
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ 
+
+#background button[id="botonBG2"]
+{
+
+  position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-50%,-50%);
+	border: none;
+	outline: none;
+  height: 67px;
+  width:70px;
+  font-size: 16px;
+  background: url('opciones.png');
+	cursor: pointer;
+  font-weight: bold;
+  
+}
+
+  #opciones {
+
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 797px;
+    height: 400px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: url('stock.jpg');
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+  
+  #opciones #titulo1 {
+  
+    font-family: 'Anton', sans-serif;
+    color: rgb(248, 248, 248);
+    position: absolute;
+    top: 5%;
+    left: 45%;
+  }
+  
+  
+  #opciones #opcionessub1{
+  
+    position: absolute;
+    top: 22%;
+    left: 03%;
+    width: 747px;
+    height: 248px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(250, 149, 67, 0.452);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+
+
+  #balancebox{
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    width: 207px;
+    height: 155px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(46, 76, 212, 0.452);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+
+  #balance {
+
+    font-family: 'Anton';
+    color: rgb(248, 248, 248);
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    font-size:18px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  #retdinero {
+
+    font-family: 'Anton';
+    color: rgb(248, 248, 248);
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    font-size:14px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  }
+#retdineroin{
+  font-family:"Roboto", helvetica, arial, sans-serif;
+  color: gray;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 45%;
+  left: 4%;
+  width: 70px;
+  height: 15px;
+}
+
+#retirardinerobt{
+
+  font-family:"Roboto", helvetica, arial, sans-serif;
+  color: white;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 62%;
+  left: 4%;
+  width: 70px;
+  height: 19px;
+  background-color: rgb(113, 196, 105);
+}
+
+
+#depdinero {
+
+  font-family: 'Anton';
+  color: rgb(248, 248, 248);
+  position: absolute;
+  top: 30%;
+  left: 48%;
+  font-size:14px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+}
+#depdineroin{
+font-family:"Roboto", helvetica, arial, sans-serif;
+color: gray;
+border: none;
+outline: none;
+position: absolute;
+top: 45%;
+left: 48%;
+width: 70px;
+height: 15px;
+}
+
+#depirardinerobt{
+
+font-family:"Roboto", helvetica, arial, sans-serif;
+color: white;
+border: none;
+outline: none;
+position: absolute;
+top: 62%;
+left: 48%;
+width: 70px;
+height: 19px;
+background-color: rgb(113, 196, 105);
+}
+
+#cambiarnombre{
+  position: absolute;
+  top: 1%;
+  left: 32%;
+  width: 275px;
+  height: 60px;
+  padding: 0px 40px;
+  box-sizing: border-box;
+  background: rgba(46, 76, 212, 0.452);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+#nombrech {
+
+  font-family: 'Anton';
+  color: rgb(248, 248, 248);
+  position: absolute;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#nombrecambiar{
+  font-family:"Roboto", helvetica, arial, sans-serif;
+  color: gray;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 45%;
+  left: 7%;
+  width: 150px;
+  height: 15px;
+  }
+
+  #botonnombre{
+
+    font-family:"Roboto", helvetica, arial, sans-serif;
+    color: white;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 44%;
+    left: 65%;
+    width: 70px;
+    height: 19px;
+    background-color: rgb(113, 196, 105);
+    }
+  
+    #vendernegocio{
+      position: absolute;
+      top: 27%;
+      left: 35%;
+      width: 215px;
+      height: 155px;
+      padding: 80px 40px;
+      box-sizing: border-box;
+      background: rgba(46, 76, 212, 0.452);
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    }
+
+    #venderh {
+      position: absolute;
+      top: 5%;
+      left: 2%;
+      width: 207px;
+      height: 155px;
+      font-family: 'Anton';
+      color: rgb(248, 248, 248);
+      position: absolute;
+      font-size:18px;
+      text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    #iduser{
+      font-family:"Roboto", helvetica, arial, sans-serif;
+      color: gray;
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 25%;
+      left: 15%;
+      width: 150px;
+      height: 15px;
+    }
+
+    #precio{
+      font-family:"Roboto", helvetica, arial, sans-serif;
+      color: gray;
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 45%;
+      left: 15%;
+      width: 150px;
+      height: 15px;
+      }
+
+      #usuarioboton{
+
+        font-family:"Roboto", helvetica, arial, sans-serif;
+        color: white;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 64%;
+        left: 30%;
+        width: 70px;
+        height: 19px;
+        background-color: rgb(113, 196, 105);
+        }
+
+        #venderGob{
+          position: absolute;
+          top: 27%;
+          left: 66%;
+          width: 215px;
+          height: 155px;
+          padding: 80px 40px;
+          box-sizing: border-box;
+          background: rgba(46, 76, 212, 0.452);
+          border-radius: 5px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+        }
+        #venderGobBoton{
+          font-family:"Roboto", helvetica, arial, sans-serif;
+          color: white;
+          border: none;
+          outline: none;
+          position: absolute;
+          top: 64%;
+          left: 30%;
+          width: 70px;
+          height: 19px;
+          background-color: rgb(113, 196, 105);
+        }
+        #venderGob p{
+          font-family: 'Anton';
+          font-size: 17px;
+          position:absolute;
+          top: 15%;
+          left: 12%;
+        }
+        
+
+      

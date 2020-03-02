@@ -1,0 +1,120 @@
+/* Modificado por Bill Gates, Rockefeller es tonto, y miguel mas */
+/* Ojala te guste miguel xdxdxd*/
+
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+body {
+    font-family: 'Bungee Shade', cursive;
+    overflow: hidden;
+    display: none;
+}
+
+/* TITULO */
+#title{
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    color: white;
+    margin-top: 0px;
+    font-size: 25px;
+    text-shadow: 7px -1px 13px rgba(255, 111, 68, 1);
+}
+
+
+
+/* Habilidades */
+#skillTitle{
+    text-align: center;
+    font-family: 'Rockwell';
+    color: white;
+    margin-top: -30px;
+    font-size: 23px;
+    text-shadow: 0px -2px 13px rgba(0, 255, 255, 1);
+}
+
+/*Descripcion*/
+#desTitle{
+    text-align: center;
+    text-align: justify-all;
+    font-family: 'Rockwell';
+    font-style: oblique;
+    color: white;
+    margin-top: 0px;
+    font-size: 17px;
+    text-shadow: 0px -2px 13px rgba(231, 10, 255);
+}
+
+/*Requerimientos*/
+#required{
+    text-align: center;
+    text-align: justify-all;
+    font-family: 'Arial';
+    font-style: oblique;
+    color: white;
+    margin-top: 5px;
+    font-size: 20px;
+    text-shadow: 5px 2px 11px rgba(180, 0, 94, 1);
+}
+
+
+/* CURSOR */
+#cursor {
+    position: absolute;
+    z-index: 999999;
+    display: none;
+}
+
+/* CAJA */
+.dialog { 
+    top: 30%;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 5px solid #FF0000;
+    background-color: #2D2D2D;
+}
+
+
+/*Botones*/
+form {
+    margin: 0;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+button {
+    display: block;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #B71E1E;
+    border: 2px solid #000000;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 12px;
+    font-size: 18px;
+    font-style: oblique;
+    font-family: 'Rockwell';
+}
+
+
+
+h1 {
+    display: block;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    border: 0;
+    color: #fff;
+    width: 100%;
+}
+
+
