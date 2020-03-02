@@ -1,0 +1,16 @@
+Locales['es'] = {
+  ['ooc_prefix'] = '^*[OOC LOCAL] | ID %s^r',
+  ['oocg_prefix'] = '^*[OOC GLOBAL] %s^r',
+  ['dados_prefix'] = '^rHas sacado un ^*^3%s^0',
+  ['twt_help'] = 'Enviar un Tweet',
+  ['twt_prefix'] = '^4^*Twitter ^0| ^r^0^*@%s^0^r',
+  ['me_help'] = 'Consultar en el foro',
+  ['me_prefix'] = '^*[ME] | ID %s',
+  ['do_help'] = 'Consultar en el foro',
+  ['anon_prefix'] = '^r^*Anonimo^r',
+  ['anon_help'] = 'Envia un mensaje anonimo',
+  ['do_prefix'] = '^*[DO] | ID %s',
+  ['generic_argument_name'] = 'Mensaje',
+  ['generic_argument_help'] = 'Tu mensaje',
+  ['unknown_command'] = '^3%s^0 no es un comando valido!',
+}

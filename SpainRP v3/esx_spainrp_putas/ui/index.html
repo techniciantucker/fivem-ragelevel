@@ -1,0 +1,296 @@
+<html>
+	<head>
+		<title>SpainRP Señoritas</title>
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'>
+		<link rel="stylesheet" href="libraries/vuetify.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<v-app id="SAWU_Hookers">
+			<v-content>
+				<div id="SAWU_SelectHookers" v-show="showPimpSelector">
+					<div id="SAWU_Hookers_Base">
+						<div id="SAWU_Hookers_Header">
+							Elige una señorita
+							<v-btn color="red" absolute right top small fab dark @click="CloseHookersMenu()">
+								<v-icon>Cerrar</v-icon>
+							</v-btn>
+						</div>
+						<div id="SAWU_Hookers_Body">
+							<v-container fluid grid-list-xs>
+								<v-layout pa-1 row wrap>
+
+									<v-flex xs3>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Cathrine</h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/Cathrine.png">
+													</tr>
+													<tr>
+														<td>Edad:</td>
+														<td>24</td>
+													</tr>
+													<tr>
+														<td>Altura (cm):</td>
+														<td>169</td>
+													</tr>
+													<tr>
+														<td>Peso (kg):</td>
+														<td>58</td>
+													</tr>
+													<tr>
+														<td>Tamaño de tetas:</td>
+														<td>B</td>
+													</tr>
+													<tr>
+														<td>Pendientes:</td>
+														<td>Si</td>
+													</tr>
+													<tr>
+														<td>Tattoos:</td>
+														<td>Ninguna</td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Servicios:</b> Masaje, Striptease</i></small></td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Opiniones:</b> <b style="color: green;">Buenas</b></i></small></td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseCathrine()">
+													Pedir
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+
+									<v-flex xs3>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Tatiana</h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/Tatiana.png">
+													</tr>
+													<tr>
+														<td>Edad:</td>
+														<td>27</td>
+													</tr>
+													<tr>
+														<td>Altura (cm):</td>
+														<td>170</td>
+													</tr>
+													<tr>
+														<td>Peso (kg):</td>
+														<td>60</td>
+													</tr>
+													<tr>
+														<td>Tamaño de tetas:</td>
+														<td>C</td>
+													</tr>
+													<tr>
+														<td>Piercings:</td>
+														<td>No</td>
+													</tr>
+													<tr>
+														<td>Tattoos:</td>
+														<td>Si</td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Servicios:</b> Escort, A domicilio</i></small></td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Opiniones:</b> <b style="color: green;">Excelente</b></i></small></td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseTatiana()">
+													Pedir
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+
+									<v-flex xs3>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Bootylicious</h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/Bootylicious.png">
+													</tr>
+													<tr>
+														<td>Edad:</td>
+														<td>31</td>
+													</tr>
+													<tr>
+														<td>Altura (cm):</td>
+														<td>178</td>
+													</tr>
+													<tr>
+														<td>Peso (kg):</td>
+														<td>62</td>
+													</tr>
+													<tr>
+														<td>Tamaño de tetas:</td>
+														<td>D</td>
+													</tr>
+													<tr>
+														<td>Piercings:</td>
+														<td>Si</td>
+													</tr>
+													<tr>
+														<td>Tattoos:</td>
+														<td>Si</td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Servicios:</b> Todos</i></small></td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Opiniones:</b> <b style="color: green;">Muy Buenas</b></i></small></td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseBootylicious()">
+													Pedir
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+
+									<v-flex xs3>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Vennesa</h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/Vennesa.png">
+													</tr>
+													<tr>
+														<td>Edad:</td>
+														<td>47</td>
+													</tr>
+													<tr>
+														<td>Altura (cm):</td>
+														<td>161</td>
+													</tr>
+													<tr>
+														<td>Peso (kg):</td>
+														<td>47</td>
+													</tr>
+													<tr>
+														<td>Tamaño de tetas:</td>
+														<td>B</td>
+													</tr>
+													<tr>
+														<td>Piercings:</td>
+														<td>No</td>
+													</tr>
+													<tr>
+														<td>Tattoos:</td>
+														<td>Ninguno</td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Servicios:</b> Escort</i></small></td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Opiniones:</b> <b style="color: red;">Malas</b></i></small></td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseVennesa()">
+													Ordenar
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+								</v-layout>
+							</v-container>
+						</div>
+					</div>
+				</div>
+				<div id="SAWU_SelectHookers" v-show="showHookersSelector">
+					<div id="SAWU_Hookers_Base">
+						<div id="SAWU_Hookers_Header">
+							Elegir servicio
+							<v-btn color="red" absolute right top small fab dark @click="CloseServiceMenu()">
+								<v-icon>close</v-icon>
+							</v-btn>
+						</div>
+						<div id="SAWU_Hookers_Body">
+							<v-container fluid grid-list-xs>
+								<v-layout pa-1 row wrap>
+									<v-flex xs6>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Mamada</h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/blowjob.png">
+													</tr>
+													<tr>
+														<td>Precio:</td>
+														<td>{{ blowjob }} €</td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseBlowjob()">
+													Elegir y pagar
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+									<v-flex xs6>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Follar</h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/sex.png">
+													</tr>
+													<tr>
+														<td>Precio:</td>
+														<td>{{ sex }} €</td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseSex()">
+													Elegir y pagar
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+								</v-layout>
+							</v-container>
+						</div>
+					</div>
+				</div>
+			</v-content>
+		</v-app>
+		<script src="libraries/axios.min.js"></script>
+		<script src="libraries/vue.min.js"></script>
+		<script src="libraries/vuetify.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

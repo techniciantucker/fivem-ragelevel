@@ -1,0 +1,15 @@
+Locales['es'] = {
+	['press_e'] = 'Presiona ~INPUT_CONTEXT~ para comprobar que le sucede a la persona',
+	['hardmeele'] = 'Presentaría golpes por el cuerpo y/o la cabeza',
+	['bullet'] = 'Probablemente le hayan disparado con un arma de fuego. Presentaría heridas de bala por el cuerpo',
+	['knifes'] = 'Parece que le hayan rajado con algo afilado',
+	['bitten'] = 'Presentaría mordeduras de un animal por el cuerpo',
+	['brokenlegs'] = 'Seguramente se haya caído de una altura considerable, tendría golpes por el cuerpo',
+	['explosive'] = 'Presentaría quemaduras y abrasiones por el cuerpo, parece que algo haya explotado cerca de él',
+	['gas'] = 'Presentaría síntomas de haber inhalado un gas tóxico',
+	['fireextinguisher'] = 'Parecería que se ha quedado inconsciente por inhalar el gas de un extintor',
+	['fire'] = 'Tendría quemaduras por gran parte de su cuerpo',
+	['caraccident'] = 'Presentaría golpes y abrasiones por el cuerpo, parece que haya salido despedido de un vehículo o haya sido atropellado uno',
+	['drown'] = 'Estaria cianótico, completamente azul y empapado, parecería que se ha ahogado',
+	['unknown'] = 'Causa desconocida',
+}

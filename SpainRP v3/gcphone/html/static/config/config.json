@@ -1,0 +1,312 @@
+{
+  "reseau": "SpainRP",
+  "warningMessageCount": 250,
+  "themeColor": "#303f9f",
+  "colors": [
+    "#EF5350",
+    "#EC407A",
+    "#AB47BC",
+    "#7E57C2",
+    "#5C6BC0",
+    "#42A5F5",
+    "#29B6F6",
+    "#26C6DA",
+    "#26A69A",
+    "#66BB6A",
+    "#9CCC65",
+    "#D4E157",
+    "#FFCA28",
+    "#FFA726",
+    "#FF7043",
+    "#8D6E63",
+    "#78909C"
+  ],
+
+  "useFormatNumberFrance": true,
+
+  "useWebRTCVocal": false,
+  "RTCConfig": {
+    "iceServers": [{
+      "urls": ["turn:5.83.163.127"],
+      "username": "axozer",
+      "credential": "axozer"
+    }]
+  },
+
+  "//": "REQUIRE https://github.com/citizenfx/screenshot-basic or set false",
+  "enableTakePhoto": false,
+  "fileUploadService_Url": "https://wew.wtf/upload.php",
+  "fileUploadService_Field": "files[]",
+
+  "background": {
+    "SpainRP": "back001.jpg",
+    "Destiny": "back002.jpg",
+    "Stormtrooper": "back003.jpg",
+    "Custom URL": "URL"
+  },
+  "background_default": {
+    "label": "SpainRP",
+    "value": "back001.jpg"
+  },
+
+
+  "coque": {
+    "Samsung S8": "s8.png",
+    "iPhone X": "iphonex.png"
+  },
+  "coque_default": {
+    "label": "Samsung S8",
+    "value": "s8.png"
+  },
+
+
+  "serviceCall": [{
+      "display": "Policia",
+      "icon": "/html/static/img/icons_app/police.png",
+      "subMenu": [{
+          "title": "Enviar un mensaje de socorro",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "police"
+          }
+        },
+        {
+          "title": "Llamar a la central",
+          "eventName": "gcphone:autoCallNumber",
+          "type": {
+            "number": "911"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Ambulancia",
+      "backgroundColor": "red",
+      "icon": "/html/static/img/icons_app/bank.png",
+      "subMenu": [{
+        "title": "Enviar un mensaje",
+        "eventName": "esx_addons_gcphone:call",
+        "type": {
+          "number": "ambulance"
+        }
+      }]
+    },
+    {
+      "display": "Mecanico",
+      "backgroundColor": "brown",
+      "icon": "/html/static/img/icons_app/contacts.png",
+      "subMenu": [{
+        "title": "Enviar un mensaje",
+        "eventName": "esx_addons_gcphone:call",
+        "type": {
+          "number": "mechanic"
+        }
+      }]
+    },
+    {
+      "display": "Taxi",
+      "backgroundColor": "yellow",
+      "subMenu": [{
+        "title": "Enviar un mensaje",
+        "eventName": "esx_addons_gcphone:call",
+        "type": {
+          "number": "taxi"
+        }
+      }]
+    }
+  ],
+  
+  
+  "defaultContacts": [{
+      "number": "ambulance",
+      "display": "Ambulancia",
+      "icon": "/html/static/img/icons_app/bank.png"
+    },
+    {
+      "number": "911",
+      "display": "Policia",
+      "backgroundColor": "blue",
+      "letter": "P"
+    },
+    {
+      "number": "mechanic",
+      "display": "Mecanico",
+      "backgroundColor": "brown",
+      "letter": "M"
+    }
+  ],
+
+  "apps": [{
+      "name": "Twitter",
+      "en_US__name": "Twitter",
+      "icons": "/html/static/img/icons_app/twitter.png",
+      "routeName": "twitter.splash",
+      "inHomePage": true
+    },
+    {
+      "name": "Telefono",
+      "en_US__name": "Telefono",
+      "icons": "/html/static/img/icons_app/call.png",
+      "routeName": "appels",
+      "inHomePage": true
+    },
+    {
+      "name": "Mensaje",
+      "en_US__name": "Mensaje",
+      "icons": "/html/static/img/icons_app/sms.png",
+      "routeName": "messages",
+      "inHomePage": true,
+      "puceRef": "nbMessagesUnread"
+    },
+    {
+      "name": "Contactos",
+      "en_US__name": "Contactos",
+      "icons": "/html/static/img/icons_app/contacts.png",
+      "routeName": "contacts",
+      "inHomePage": true
+    },
+    {
+      "name": "Ajustes",
+      "en_US__name": "Ajustes",
+      "icons": "/html/static/img/icons_app/settings.png",
+      "routeName": "parametre",
+      "inHomePage": true
+    },
+    {
+      "name": "Saldo Bancario",
+      "en_US__name": "Saldo Bancario",
+      "icons": "/html/static/img/icons_app/bank.png",
+      "routeName": "bank",
+      "inHomePage": false
+    },
+    {
+      "name": "Camara",
+      "en_US__name": "Camera",
+      "icons": "/html/static/img/icons_app/photo.png",
+      "routeName": "photo"
+    },
+    {
+      "name": "Dark Web",
+      "en_US__name": "Dark Web",
+      "icons": "/html/static/img/icons_app/tchat.png",
+      "routeName": "tchat"
+    },
+    {
+      "name": "Memedroid",
+      "icons": "/html/static/img/icons_app/9gag.png",
+      "routeName": "9gag"
+    }
+  ],
+  "defaultLanguage": "en_US",
+  "language": {
+    "en_US": {
+      "NAME": "Español",
+      "PHONE_WARNING_MESSAGE": "memento",
+      "PHONE_WARNING_MESSAGE_MESS": "Noticias",
+      "CONFIRM": "Aceptae",
+      "CANCEL": "Cancelar",
+      "APP_CONFIG_TITLE": "Ajustes",
+      "APP_CONFIG_MY_MUNBER": "Mi numero",
+      "APP_CONFIG_WALLPAPER": "Fondo de pantalla",
+      "APP_CONFIG_CASE": "Marca de telefono",
+      "APP_CONFIG_ZOOM": "Tamaño telefono",
+      "APP_CONFIG_VOLUME": "Volume",
+      "APP_CONFIG_LANGUAGE": "Lenguaje",
+      "APP_CONFIG_MOUSE_SUPPORT": "¿Controlar mediante el raton?",
+      "APP_CONFIG_RESET": "Formatear dispositivo",
+      "APP_CONFIG_RESET_CONFIRM": "CONFIRMAR",
+      "APP_PHONE_CALL": "Llamar",
+      "APP_PHONE_DELETE": "Borrar",
+      "APP_PHONE_DELETE_ALL": "Borrar todo.",
+      "APP_PHONE_TITLE": "Numero de telefono",
+      "APP_PHONE_MENU_FAVORITES": "Favoritos/Emergencia",
+      "APP_PHONE_MENU_RECENTS": "Reciente",
+      "APP_PHONE_MENU_CONTACTS": "Contactos",
+      "APP_PHONE_ENTER_NUMBER": "Introducir un numero",
+      "APP_PHONE_NUMBER_HIDDEN": "Numero Oculto",
+      "APP_PHONE_NUMBER_UNKNOWN": "Numero desconocido",
+      "APP_BANK_TITLE": "Banco",
+      "APP_BOURSE_TITLE": "stock exchange",
+      "APP_CONTACT_TITLE": "Detalles del contacto",
+      "APP_CONTACT_NEW": "Nuevo contacto",
+      "APP_CONTACT_EDIT": "Modificar el contacto",
+      "APP_CONTACT_SAVE": "Registrar",
+      "APP_CONTACT_CANCEL": "Cancelar",
+      "APP_CONTACT_DELETE": "Eliminar",
+      "APP_CONTACT_LABEL_NAME": "Nombre - Apellidos",
+      "APP_CONTACT_LABEL_NUMBER": "Numero",
+      "APP_MESSAGE_TITLE": "Mensajes",
+      "APP_MESSAGE_NEW_MESSAGE": "Nuevo mensaje",
+      "APP_MESSAGE_ERASE_CONVERSATION": "Borrar la llamada",
+      "APP_MESSAGE_ERASE_ALL_CONVERSATIONS": "Eliminar toda la conversacion.",
+      "APP_MESSAGE_SEND_GPS": "Enviar señal GPS",
+      "APP_MESSAGE_SET_GPS": "Marcar señal GPS",
+      "APP_MESSAGE_ZOOM_IMG": "Agrandar",
+      "APP_MESSAGE_DELETE": "Eliminar",
+      "APP_MESSAGE_MESS_NUMBER": "Numero: ",
+      "APP_MESSAGE_MESS_SMS": "Mensaje",
+      "APP_MESSAGE_MESS_CALL": "Llamada",
+      "APP_MESSAGE_MESS_COPY": "Copiar",
+      "APP_MESSAGE_SMS": "Mensaje de Texto",
+      "APP_MESSAGE_CONTACT_TITLE": "Contactos",
+      "APP_MESSAGE_CONTRACT_ENTER_NUMBER": "Introduce un numero",
+      "APP_MESSAGE_PLACEHOLDER_ENTER_MESSAGE": "Enviar un mensaje",
+      "APP_PHONE_CALL_ANONYMOUS": "Llamar anonimamente",
+      "APP_DARKTCHAT_TITLE": "Dark Chat",
+      "APP_DARKTCHAT_NEW_CHANNEL": "Añadir un canal",
+      "APP_DARKTCHAT_DELETE_CHANNEL": "Eliminar el canal",
+      "APP_DARKTCHAT_CANCEL": "Cancelar",
+      "APP_DARKTCHAT_PLACEHOLDER_ENTER_MESSAGE": "Añadir un mensaje",
+      "APP_TWITTER_NAME": "Twitter",
+      "APP_TWITTER_VIEW_TWITTER": "Twitter",
+      "APP_TWITTER_VIEW_TOP_TWEETS": "Tweets TOP",
+      "APP_TWITTER_VIEW_TWEETER": "Tweets",
+      "APP_TWITTER_VIEW_SETTING": "Ajustes",
+      "APP_TWITTER_NEW_ACCOUNT_USERNAME": "Usuario (Mas de 4 carácteres)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD": "Contraseña (Mas de 6 carácteres)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD_CONFIRM": "Confirmar contraseña",
+      "APP_TWITTER_NEW_ACCOUNT_AVATAR": "URL de foto de perfil",
+      "APP_TWITTER_PLACEHOLDER_MESSAGE": "Publicar un tweet",
+      "APP_TWITTER_BUTTON_ACTION_TWEETER": "Publicar",
+      "APP_TWITTER_ACCOUNT_LOGIN": "Loguear en Twitter",
+      "APP_TWITTER_ACCOUNT_LOGOUT": "Desconectar de la cuenta",
+      "APP_TWITTER_ACCOUNT_PARAM": "Mi cuenta",
+      "APP_TWITTER_ACCOUNT_AVATAR": "Cambiar avatar",
+      "APP_TWITTER_ACCOUNT_CHANGE_PASSWORD": "Cambiar contraseña",
+      "APP_TWITTER_ACCOUNT_NEW": "Nueva cuenta",
+      "APP_TWIITER_ACCOUNT_SAVE": "Registro",
+      "APP_TWIITER_ACCOUNT_CREATE": "Crear una cuenta",
+      "APP_TWIITER_ACCOUNT_CANCEL": "Cancelar",
+      "APP_TWITTER_ACCOUNT_USERNAME": "Usuario",
+      "APP_TWITTER_ACCOUNT_PASSWORD": "Contraseña",
+      "APP_TWITTER_NOTIFICATION": "Notificaciones",
+      "APP_TWITTER_NOTIFICATION_WHEN": "¿Que quieres ser notificado?",
+      "APP_TWITTER_NOTIFICATION_ALL": "Todo",
+      "APP_TWITTER_NOTIFICATION_MENTION": "Solo menciones",
+      "APP_TWITTER_NOTIFICATION_NEVER": "Nadie",
+      "APP_TWITTER_NOTIFICATION_SOUND": "¿Escuchar sonido?",
+      "APP_TWITTER_NOTIFICATION_SOUND_YES": "Si",
+      "APP_TWITTER_NOTIFICATION_SOUND_NO": "No",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_SUCCESS": "Tu cuenta de twitter ha sido creada.",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_ERROR": "Tu cuenta de twitter no pudo ser creada (nombre de usuario en uso)",
+      "APP_TWITTER_NOTIF_LOGIN_SUCCESS": "Has conectad a Twitter.",
+      "APP_TWITTER_NOTIF_LOGIN_ERROR": "Contraseña/Usuario invalido",
+      "APP_TWITTER_NOTIF_AVATAR_SUCCESS": "Tu foto de perfil ha sido cambiado",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_SUCCESS": "Tu contrasña ha sido guardada.",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_ERROR": "Oof.... Tu contraseña no se ha podido guardar.",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_MISS_MATCH": "Las contraseñas no coinciden",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_LENGTH_ERROR": "Contraseña demasiado corta",
+
+      "TIMEAGO": [
+        "Ahora mismo",
+        ["hace %s segundos", "hace %s segundos"],
+        ["hace %s minutos", "hace %s minutos"],
+        ["hace %s horas", "hace %s horas"],
+        ["hace %s dias", "hace %s dias"],
+        ["hace %s semanas", "hace %s semanas"],
+        ["hace %s meses", "hace %s meses"],
+        ["hace %s años", "hace %s años"]
+      ]
+    }
+  }
+}

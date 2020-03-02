@@ -1,0 +1,17 @@
+Locales['en'] = {
+  ['not_enough_money']    = 'No tienes suficiente dinero',
+  ['aircraft_belongs']    = 'El helicoptero con la matricula ~y~%s~s~ ahora te ~b~pertence~s~',
+  ['generic_shopitem']    = '%s€',
+  ['aircraft_dealer']     = 'Compa de aviones',
+  ['buy_aircraft_shop']   = '¿Quieres comprar %s por %s€?',
+  ['buy_license']         = 'Comprar licencia',
+  ['no']                  = 'No',
+  ['yes']                 = 'Si',
+  ['aircraft_purchased']  = 'Has comprado un helicoptero',
+  ['shop_menu']           = 'Presiona ~INPUT_CONTEXT~ para acceder al menu',
+  ['shop_awaiting_model'] = 'El vehiculo se esta ~g~CARGANDO~s~ por favor, espere',
+  ['sell_menu']           = 'Presiona ~INPUT_CONTEXT~ para vender tu ~y~%s~s~ por ~g~%s€~s~',
+  ['license_missing']     = 'No tienes la licencia de vuelo',
+  ['aircraft_sold_for']   = 'El ~b~%s~s~ has been ~y~sold~s~ for ~g~$%s~s~',
+  ['not_yours']           = 'this vehicle does not belong to you',
+}

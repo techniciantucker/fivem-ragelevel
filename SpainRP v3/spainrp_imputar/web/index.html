@@ -1,0 +1,115 @@
+﻿<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script> -->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <img id="cursor" src="cursor.png">
+
+        <div id="impound-form">
+			<h1>Imputar vehiculo</h1>
+			<hr>
+			<div id="veh-info">
+				<p id="owner">Desconocido</p>
+				<p id="plate">Desconocida</p>
+			</div>
+			<hr>
+			<div id="names" class="row">
+				<label>Policia Autorizado: </label>
+				<input id="officer" class="form-control" name="officer" placeholder="Nombre y Apellido"/>
+				<label>Mecánico Autorizado: </label>
+				<input id="mechanic" class="form-control" name="officer" placeholder="Nombre y Apellido"/>
+			</div>
+			<div id="duration-row">
+				<label>Duración:* </label>
+				<div id="duration">
+					<!-- <input type="number" min="0" max="41" id="weeks" class="form-control" name="weeks" placeholder="0 - 41 Semanas"/> -->
+					<!-- <input type="number" min="0" max="6" id="days" class="form-control" name="days" placeholder="0 - 6 Dias"/> -->
+					<input type="number" min="0" max="23" id="hours" class="form-control" name="hours" placeholder="0 - 23 Horas"/>
+				</div>
+			</div>
+			<div id="fee-row">
+					<label>Multa:* </label>
+					<input type="number" min="250" max="100000" id="fee" class="form-control" name="fee" placeholder="250 - 100.000 €"/>
+			</div>
+			<hr>
+			<div class="form-group">
+				<label>Motivo del embargo:* </label>
+				<textarea id="reason" class="form-control" name="reason" placeholder="Introduce una descripcion valida del motivo del embargo" rows="8"></textarea>
+			</div>
+			<hr>
+			<div class="form-group">
+				<label>Notas: </label>
+				<textarea id="reason" class="form-control" name="reason" placeholder="Razon" rows="3"></textarea>
+			</div>
+			<hr>
+			<div id="hold_o" class="form-group checkbox">
+				La retirada del vehiculo debe ser aprobada por un policia: <input type="checkbox">
+			</div>
+			<div id="hold_m" class="form-group checkbox">
+				La retirada del vehiculo debe ser aprobada por mecanico: <input type="checkbox">
+			</div>
+			<div id="errors">
+			
+			</div>
+			<div id="actions">
+				<button class="btn cancel mr" id="cancel">Cancelar</button>
+				<button class="btn success" id="impound">Imputar</button>
+			</div>
+        </div>
+		
+		<div id="retrieve-form">
+			<h1>Sacar vehiculo del deposito</h1>
+			<span id="exit">&#x2715;</span>
+			<hr>
+			<div class="scrollable">
+				<table>
+					<thead>
+						<tr>
+							<th>Matrícula</th>
+							<th>Fecha de desbloqueo </th>
+							<th>Multa</th>
+							<th>Agente Encargado</th>
+							<th>Acciones</th>
+						</tr>
+					</thead>
+					<tbody id="impounded-vehicles">
+						
+					</tbody>
+				</table>
+			</div>
+			<hr>
+			<p> Motivo del embargo </p>
+			<textarea id="r-reason" class="form-control" disabled rows="5"></textarea>
+			<p id="hold-by" class="error"></p>
+		</div>
+		
+		<div id="admin-terminal">
+			<h1>Vehículos imputados</h1>
+			<span id="exit">&#x2715;</span>
+			<hr>
+			<div class="scrollable">
+				<table>
+					<thead>
+						<tr>
+							<th>Matrícula</th>
+							<th>Fecha de desbloqueo </th>
+							<th>Multa</th>
+							<th>Agente Encargado</th>
+							<th>Acciones</th>
+						</tr>
+					</thead>
+					<tbody id="admin-impounded-vehicles">
+						
+					</tbody>
+				</table>
+			</div>
+			<hr>
+			<p> Motivo del embargo </p>
+			<textarea id="admin-reason" class="form-control" disabled rows="5"></textarea>
+		</div>
+
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
