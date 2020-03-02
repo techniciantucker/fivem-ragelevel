@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2000" />
+  <proxies>
+	<Item>hei_hw1_18_strm_0</Item>
+    <Item>pw-247exterior</Item>
+    <Item>pw-247_milo_</Item>
+	</proxies>
+</SInteriorOrderData>

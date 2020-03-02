@@ -1,0 +1,279 @@
+<html>
+ <head>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+ </head>
+ <body>
+  <img id="cursor">
+  <div class="phone">
+   <div class="screen">
+    <div class="earpiece"></div>
+    <div class="phone-info">
+      <i class="fa fa-signal" aria-hidden="true"></i> CLRP 
+      <i class="fa fa-wifi" aria-hidden="true"></i>
+      <i class="fa fa-battery-half" aria-hidden="true"></i><font id="time2" style="float: right; padding-right: 30px;">10:15</font>
+    </div>
+    <div class="display">
+     <!-- Home Page -->
+     <div class="homePage" style="padding: 15px;">
+      <h1 id="time" style="font-size: 72px; text-align: center; color: white;">16:59</h1>
+      <h4 id="date" style="font-size: 22px; text-align: center; color: white;">Friday 11 January</h4>
+      <h5 id="number" style="font-size: 20px; text-align: center; color: white;">555LEEDEN</h5> 
+      <div class="appList">
+       <div class="app" style="background: #49e664;"><i class="fa fa-address-book" onclick="openPage('contactsPage')"></i></div>
+       <div class="app" style="background: #f79d3d;"><i class="fa fa-sms" onclick="openPage('messagesPage')"></i></div>
+       <div class="app" style="background: #0059ff;"><i style="margin-left: 8px;" class="fab fa-twitter" onclick="openPage('twitterPage')"></i></div>
+       <div class="app" style="background: #ad2d2d;"><i style="margin-top: 14px; font-size: 32px !important;" class="fa fa-ambulance" onclick="openPage('servicesPage')"></i></div>
+       <div class="app" style="background: #8a1fc4;"><i class="fa fa-piggy-bank" onclick="openPage('bankingPage')"></i></div>
+       <div class="app" id="deepWeb" style="background: #000000; display: none !important;"><i class="fa fa-cannabis" onclick="openPage('deepWebPage')"></i></div>
+       <div class="app" id="trucking" style="background: #4fa590; display: none !important;"><i class="fa fa-truck-moving" onclick="openPage('truckingPage')"></i></div>
+       <div class="app" style="background: #07ffcd;"><i class="fa fa-at" onclick="openPage('emailPage')"></i></div>
+       <div class="app" style="background: #994900;"><i class="fa fa-home" onclick="openPage('housingPage')"></i></div>
+       <div class="app" style="background: #006793;"><i class="fa fa-cloud-sun-rain" onclick="openPage('weatherPage')"></i></div>
+       <div class="app" style="background: #c938b8;"><i class="fa fa-car" onclick="openPage('garagePage')"></i></div>
+       <div class="app" style="background: #5e5e5e;"><i class="fa fa-cog" onclick="openPage('settingsPage')"></i></div>
+      </div>
+     </div>
+
+     <!-- Contacts -->
+     <div id="contactsPage" style="display: none;">
+      <div id="background">
+       <div id="contactList"></div>
+       <button style="position: absolute; bottom: 10%; right: 7.5%; font-size: 30px;" type="button" class="btn btn-success" onclick="newContact()"><i class="fa fa-plus"></i></button>
+      </div>
+     </div>
+
+     <!-- Messages -->
+     <div id="messagesPage" style="display: none;">
+      <div id="background">
+       <div id="messagesList"></div>
+      </div>
+     </div>
+
+     <div id="messagePage" style="display: none;">
+      <div class="background">
+       <div id="messageList"></div>
+      </div>
+      <div style="position: absolute; bottom:9.5%; width: 90.6%; background-color: #f6f6f6; padding: 5px;">
+       <input style="width: 99.5%; padding: 5px;" id="new_message" placeholder="Whats On Your Mind?...."/>
+      </div> 
+     </div>
+
+     <!-- Twitter -->
+     <div id="twitterPage" style="display: none;"> 
+      <div id="background">
+       <div id="tweetList"></div>
+       <div style="position: absolute; bottom:9.5%; width: 90.6%; background-color: #f6f6f6; padding: 5px;">
+        <input style="width: 99.5%; padding: 5px;" id="new_tweet" placeholder="Whats On Your Mind?...."/>
+       </div>   
+      </div>
+     </div>
+
+     <!-- Deep Web -->
+     <div id="deepWebPage" style="display: none;">
+      <div id="background">
+       <div id="deepWebList"></div>
+       <div style="position: absolute; bottom:9.5%; width: 90.6%; background-color: #f6f6f6; padding: 5px;">
+        <input style="width: 99.5%; padding: 5px;" id="newDeepDark" placeholder="Post Your Criminal Thoughts?...."/>
+       </div>   
+      </div>
+     </div>
+     
+
+     <!-- Services -->
+     <div id="servicesPage" style="display: none;">
+      <textarea class="form-control" placeholder="Insert Your Message..." id="serviceMessage"></textarea>
+      <div class="buttons">
+       <button type="button" onclick="messageService(1)" class="btn btn-info"><i style="font-size: 52px; color: #f1f1f1;" class="fa fa-shield-alt"></i></button>
+       <button type="button" onclick="messageService(2)" class="btn btn-danger"><i style="font-size: 52px; color: #f1f1f1;" class="fa fa-ambulance"></i></button>
+       <button type="button" onclick="messageService(3)" class="btn btn-dark"><i style="font-size: 52px; color: #f1f1f1;" class="fa fa-wrench"></i></button>
+       <button type="button" onclick="messageService(4)" class="btn btn-warning"><i style="font-size: 52px; color: #f1f1f1;" class="fa fa-taxi"></i></button>
+      </div>
+     </div>
+
+     <!-- Banking -->
+     <div id="bankingPage" style="display: none;">
+      <div id="background">
+       <div class="balance" id="bankingHome" style="display: block !important;">
+        <h3 style="font-size: 24px;">Fondos Bancarios</h3>
+        <h2><font style="font-size: 24px;">$</font><font id="bankBalance"></font></h2>
+        <p style="color: black; font-weight: 300;">Disponible</p>
+       </div> 
+       <h3 class="activityTitle">Movimientos</h3>
+       <div class="activity">
+        <div id="bankActivity"></div>
+       </div> 
+       <div class="buttons">
+        <div class="sendMoney">
+         <button type="button" onclick="openPage('sendMoney')" class="btn btn-primary btn-circle btn-lg"><i class="fa fa-sign-in-alt"></i></button>
+         <small>Enviar</small>
+        </div>
+        <div class="getBills">
+         <button type="button" onclick="getBills()" class="btn btn-primary btn-circle btn-lg"><i class="fa fa-file-invoice"></i></button>
+         <small>Obtener</small>
+        </div>
+        <div class="payBills">
+         <button type="button" onclick="payBills()" class="btn btn-primary btn-circle btn-lg"><i class="fa fa-file-invoice-dollar"></i></button>
+         <small>Pagar</small>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <div id="sendMoney" style="display: none;">
+      <div id="background">
+       <h3 class="activityTitle">Transferir dinero</h3>
+       <div class="activity">
+        <input type="number" name="email" placeholder="Banking ID" id="transfer_id">
+        <input type="number" name="email" placeholder="Amount" id="transfer_amount">
+       </div> 
+       <div class="disclaimer">
+        <p style="color: black; font-weight: 300;">Tarifa transferencia: <font style="float: right; padding-right: 10px;">Gratis</font></p>
+        <p style="color: black; font-weight: 300;">Hora prevista: <font style="float: right; padding-right: 10px;">Instantaneo</font></p>
+       </div>
+       <div class="info">
+        <p style="color: black; font-weight: 320;">Las transferencias pueden demorar hasta 30 minutos y variar según el banco. Todas las transferencias están sujetas a revisión y podrían retrasarse o detenerse si identificamos un problema.</font></p>
+       </div>
+       <button type="button" class="btn btn-primary brn-lg transfer" onclick="sendMoney()">Continuar</button>
+      </div>
+     </div>
+
+     <!-- Trucking -->
+     <div id="truckingPage" style="display: none;">
+      <div id="background">
+       <div id="truckingJobList"></div>
+      </div>
+     </div>
+
+     <!-- Emailing -->
+     <div id="emailPage" style="display: none;">
+      <div id="background">
+       <div id="emailList"></div>
+      </div>
+     </div>
+
+     <!-- Housing -->
+     <div id="housingPage" style="display: none;">
+      <div id="background">
+       <div id="housingList"></div>
+      </div>
+     </div>
+
+     <!-- Garage -->
+     <div id="garagePage" style="display: none;">
+      <div id="background">
+       <div id="myVehicles"></div>
+      </div>
+     </div>
+
+     <!-- Weather App -->
+     <div id="weatherPage" style="display: none;">
+      <div class="background">
+       <div class="main">
+        <h3 id="myLocation" style="font-size: 28px;">Paleto</h3>
+        <h1 id="currentTemp" style="font-size: 86px; font-weight: bold; padding-top: 10px;">18°</h1>
+       </div>
+       <div class="weatherList">
+        <div id="newWeatherApp"></div>
+       </div>
+      </div>
+     </div>
+
+     <!-- Settings -->
+     <div id="settingsPage" style="display: none;">
+      <div id="background">
+       <div class="newSetting">
+        <p>Mute Notifications</p>
+        <label class="switch ">
+          <input type="checkbox" class="default" id="muteNotifications" onclick="muteNotifications()">
+          <span class="slider"></span>
+        </label>
+       </div>
+       <div class="newSetting">
+        <p>Background</p>
+        <select id="selectorBackground">
+         <option value="https://cdn.discordapp.com/attachments/560555768185880587/575109091127721994/Fondo_movil_2.png" selected>Waffle Wanker</option>
+         <option value="https://cdn.discordapp.com/attachments/560555768185880587/575299595954028565/Fondo_mobil_ajustado.png">Wang 2</option>
+         <option value="https://capitalliferp.com/img/phone/aquamarine.png">Aquamarine</option>
+         <option value="https://capitalliferp.com/img/phone/cracked.png">Cracked</option>
+         <option value="https://capitalliferp.com/img/phone/nightsmoke.jpg">Nightsmoke</option>
+         <option value="https://capitalliferp.com/img/phone/cratergeo.jpg">CraterGeo</option>
+         <option value="https://capitalliferp.com/img/phone/starrynight.png">Starry Night</option>
+         <option value="https://capitalliferp.com/img/phone/vanillaunicorn.png">Vanilla Unicorn</option>
+         <option value="https://capitalliferp.com/img/phone/quote.png">Quote</option>
+         <option value="https://capitalliferp.com/img/phone/bobby.png">Bobby</option>
+         <option value="https://capitalliferp.com/img/phone/ursula.png">Ursula Goats</option>
+        </select>
+       </div>
+       <div class="newSetting" onclick="sendMyNumber()">
+        <p>Enviar mi contacto</p>
+       </div>
+      </div>
+     </div>
+
+
+
+
+    <!-- Calling -->
+    <div id="startCall" style="display: none;">
+     <h2 style="color: white; font-size: 56px; top: 8%; text-align: center" id="startCall_number">Desconocido</h2>
+     <h2 style="color: white; font-size: 42px; top: 8%; text-align: center">Zumbido</h2>
+     <button onclick="declineCall()">Finalizar llamada</button>
+    </div>
+
+    <div id="callWaiting" style="display: none;">
+     <h2 style="color: white; font-size: 56px; top: 8%; text-align: center" id="callWaiting_number">Desconocido</h2>
+     <h2 style="color: white; font-size: 42px; top: 8%; text-align: center">Llamada entrante</h2>
+     <button onclick="answerCall()" style="background-color: #00bc12; bottom: 20%;">Responder la llamada</button>
+     <button onclick="declineCall()" style=" bottom: 10%;">Rechazar llamada</button>
+    </div>
+
+    <div id="callInProgress" style="display: none;">
+     <h2 style="color: white; font-size: 56px; top: 8%; text-align: center" id="callInProgress_number">Desconocido</h2>
+     <h2 style="color: white; font-size: 42px; top: 8%; text-align: center">En llamada</h2>
+     <button onclick="declineCall()">Finalizar llamada</button>
+    </div>
+    </div>
+    <div class="home-btn" onclick="homePage()"></div>
+   </div>
+  </div>
+  <!-- New Contact--> 
+  <div id="addContact" style="display: none;">
+   <input type="text" placeholder="Spencer Reid" id='contact_name' style="position: absolute; width: 95%; left:2%; top: 5%;height: 25%;"><br><br>
+   <input type="text" placeholder="555991274" id='contact_number' style="position: absolute; width: 95%; left:2%; top: 35%; height: 25%;">
+   <div class="contactButtons">
+    <button type="button" class="btn btn-success" onclick="addContact()">Agregar contacto</button>
+    <button type="button" class="btn btn-success" onclick="closeContact()">Cancelar</button>
+   </div>
+  </div>
+  <script src="script.js" type="text/javascript"></script>
+  <script>
+   var input = document.getElementById('new_tweet')
+   input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+     newTweet()
+    };
+   })
+
+   var input = document.getElementById('newDeepDark')
+   input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+     newDeepDark()
+    };
+   })
+
+   var input = document.getElementById('new_message')
+   input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+     sendMessage()
+    };
+   })
+  </script>
+ </body> 
+</html>

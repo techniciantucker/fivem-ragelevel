@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4790" />
+  <proxies>
+	<Item>bh1_occl_05</Item>
+	<Item>hei_bh1_16_strm_0</Item>
+	<Item>int_storedt_milo_</Item>
+	</proxies>
+</SInteriorOrderData>

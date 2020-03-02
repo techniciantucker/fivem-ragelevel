@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4340" />
+  <proxies>
+	<Item>lr_cs6_04_critical_0</Item>
+    <Item>lr_cs6_04_long_3</Item>
+    <Item>lr_cs6_04_strm_1</Item>
+    <Item>lr_cs6_04_strm_3</Item>
+    <Item>pw-prisonyard</Item>
+	</proxies>
+</SInteriorOrderData>

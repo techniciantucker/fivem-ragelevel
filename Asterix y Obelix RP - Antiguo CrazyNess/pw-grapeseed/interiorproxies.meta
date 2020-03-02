@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2750" />
+  <proxies>
+	<Item>grapebank</Item>
+    <Item>grapebarber</Item>
+    <Item>grapefixes</Item>
+    <Item>grapeshop</Item>
+    <Item>hei_cs2_01</Item>
+	</proxies>
+</SInteriorOrderData>

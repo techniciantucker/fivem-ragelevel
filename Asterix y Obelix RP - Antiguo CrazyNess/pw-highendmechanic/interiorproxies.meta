@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2790" />
+  <proxies>
+	<Item>breze_mekaniker</Item>
+    <Item>hei_id2_occl_01</Item>
+    <Item>mechanicnewdoor</Item>
+	</proxies>
+</SInteriorOrderData>

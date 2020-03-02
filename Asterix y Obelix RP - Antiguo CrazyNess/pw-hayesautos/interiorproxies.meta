@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2780" />
+  <proxies>
+	<Item>lr_sc1_06_long_0</Item>
+    <Item>lr_sc1_06_strm_0</Item>
+    <Item>lr_sc1_rd_long_0</Item>
+    <Item>lr_sc1_rd_strm_5</Item>
+    <Item>pw-hayesautos</Item>
+	</proxies>
+</SInteriorOrderData>

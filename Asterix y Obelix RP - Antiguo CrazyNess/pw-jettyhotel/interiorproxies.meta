@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4820" />
+  <proxies>
+	<Item>pw-jettyhotel_milo_</Item>
+	<Item>vb_occl_00</Item>
+	<Item>sm_occl_01</Item>
+	<Item>sm_occl_00</Item>
+	<Item>sm_26_strm_1</Item>
+	<Item>hei_sm_occl_01</Item>
+	<Item>hei_sm_occl_00</Item>
+	<Item>hei_sm_26_strm_1</Item>
+	<Item>ch1_occl_01</Item>
+	<Item>ch1_far_occl_00</Item>
+	</proxies>
+</SInteriorOrderData>

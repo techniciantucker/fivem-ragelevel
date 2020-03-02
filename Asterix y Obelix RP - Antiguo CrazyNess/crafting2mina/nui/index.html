@@ -1,0 +1,277 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<style>
+			* {
+				box-sizing: border-box;
+			}
+		
+			body {
+				font-family: "Poppins", sans-serif;
+				color: #9baec8;
+			}
+		
+			.window {
+				height: 75vh;
+				width: 36vw;
+				position: fixed;
+				left: 32.5vw;
+				top: 12.5vh;
+				background: #000000;
+				box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+				display: none;
+				
+			}
+			
+			.right, .left {
+				display: inline-block;
+				height: 75vh;
+				width: 35vw;
+				float: left;
+			}
+			
+			.right {
+				overflow: auto;
+			}
+			
+			.left {
+				padding: 15px;
+				position: relative;
+			}
+
+			h3 {
+				text-align: center;
+				font-size: 15px;
+				font-weight: normal;
+				color: #d9ff00;
+			}
+			
+			h2 {
+				text-align: center;
+				color: #eeff00;
+			}
+			
+			.update {
+				background: #000000;
+				margin: 15px;
+				padding: 15px;
+			}
+			
+			.update p:first-child {
+				margin-top: 0;
+				font-weight: bold;
+			}
+			
+			.date {
+				float: right;
+			}
+			
+			.new, .submit {
+				background: #64ce87;
+				color: #1f6135;
+			}
+			
+			.select {
+				background: #64ce87;
+				color: #1f6135;
+			}
+			
+			.escape {
+				background: #ff5e5e;
+				color: #9c1b1b;
+			}
+			
+			.window button {
+				border: none;
+				padding: 15px;
+				font-weight: bold;
+				font-family: "Poppins", sans-serif;
+				width: calc(50% - 22.5px);
+				position: absolute;
+				bottom: 15px;
+				transition: all 0.25s ease;
+			}
+			
+			.window button:hover {
+				cursor: pointer;
+				transition: all 0.25s ease;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+			}
+			
+			.window .buttons button:nth-child(2) {
+				right: 0px;
+			}
+			
+			
+			.characters {
+				height: calc(75vh - 95px);
+				position: absolute;
+				width: calc(35vw - 15px);
+				left: 15px;
+				top: 15px;
+				background: #16191f;
+				padding: 15px;
+			}
+			
+			.update:not(:nth-child(2)) {
+				margin-top: 0;
+			}
+			
+			.register {
+				position: fixed;
+				height: 75vh;
+				width: 35vw;
+				left: 32.5vw;
+				top: 12.5vh;
+				background: #282c37;
+				box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+				padding: 15px;
+				display: none;
+			}
+			
+			.register button {
+				border: none;
+				padding: 15px;
+				font-weight: bold;
+				font-family: "Poppins", sans-serif;
+				width: calc(50% - 22.5px);
+				position: absolute;
+				bottom: 15px;
+				transition: all 0.25s ease;
+			}
+			
+			.register .buttons button:nth-child(2) {
+				right: 15px;
+			}
+			
+			.register button:hover {
+				cursor: pointer;
+				transition: all 0.25s ease;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+			}
+			
+			input, select, textarea {
+				width: 100%;
+				background: #16191f;
+				padding: 15px;
+				border: 0;
+				color: #9baec8;
+				font-family: "Poppins", sans-serif;
+			}
+			
+			input, select {
+				margin-bottom: 15px;
+			}
+			
+			textarea {
+				resize: none;
+				height: calc(75vh - 421px);
+			}
+			
+			.character {
+				background: #eff4f7;
+				padding: 15px;
+				color: #16191f;
+				cursor: pointer;
+				transition: all 0.25s ease;
+			}
+
+			.note {
+				background: #eff4f7;
+				padding: 6px;
+				color: #16191f;
+				cursor: pointer;
+				transition: all 0.25s ease;
+			}
+			
+			.character:hover {
+				transition: all 0.25s ease;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+			}
+			
+			.characters {
+				overflow: auto;
+			}
+			
+			.characters .character:not(:first-child) {
+				margin-top: 15px;
+			}
+			
+			.character p:first-child {
+				margin-top: 0;
+				font-weight: bold;
+			}
+			
+			.character p:last-child {
+				margin-bottom: 0;
+			}
+			
+			.separator {
+				font-weight: bold;
+			}
+			
+			.white {
+				background: #58a1ef;
+			}
+
+		</style>
+</head>
+<body>
+<div class="window">
+<div class="left">
+<div class="characters">
+		
+</div>
+<div class="buttons">
+<button class="select">Craft</button>
+<button class="escape">Exit</button>
+</div>
+</div>
+
+</div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js">
+			// jquery
+		</script>
+<script type="text/javascript">
+			let current = 0;
+			
+			$(function( ) {
+				window.addEventListener("message", function(event) {
+					if(event.data.type == "enableui") {
+						event.data.enable ? $("body").show( ) : $("body").hide( );
+						
+						if(event.data.enable) {
+							$(".characters").html(event.data.characters);
+							$(".window").show( );
+						} else {
+							$(".window").hide( );
+						}   
+					}
+				});
+				
+				$(".select").click(function( ) {
+					if (current > 0) {
+						$.post("http://crafting2mina/selectrecipe", JSON.stringify({id: current}));
+					} 
+					
+					current = 0;
+				});
+
+				$(".escape").click(function( ) {
+					$.post("http://crafting2mina/escape");
+					$(".window").hide( );
+					
+				});
+				
+				
+				$(document).on("click", ".character", function( ) {
+                    current = parseInt($(this).attr("id"));
+                    $(".character").removeClass("white");
+                    $(this).addClass("white");
+                });
+			});
+		</script>
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0439'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>

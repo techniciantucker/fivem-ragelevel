@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4570" />
+  <proxies>
+	<Item>dons_house_sm1_milo_</Item>
+	<Item>dons_house_sm2_milo_</Item>
+	<Item>dons_house_sm3_milo_</Item>
+	<Item>dons_house_sm4_milo_</Item>
+	<Item>dons_house_sm5_milo_</Item>
+	</proxies>
+</SInteriorOrderData>

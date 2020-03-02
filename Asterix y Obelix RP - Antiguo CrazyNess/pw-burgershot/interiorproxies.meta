@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2090" />
+  <proxies>
+	<Item>hei_vb_03</Item>
+    <Item>hei_vb_03_strm_0</Item>
+    <Item>vb_03</Item>
+    <Item>vb_03_strm_0</Item>
+    <Item>vb_occl_01</Item>
+    <Item>vespucci_burgershot_milo_</Item>
+	</proxies>
+</SInteriorOrderData>

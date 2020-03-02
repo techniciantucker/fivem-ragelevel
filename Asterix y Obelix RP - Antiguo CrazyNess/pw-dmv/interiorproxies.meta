@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4650" />
+  <proxies>
+	<Item>apa_ch2_occl_04</Item>
+    <Item>apa_ch2_occl_06</Item>
+    <Item>hei_hw1_01_strm_1</Item>
+    <Item>hw1_01_long_0</Item>
+    <Item>hw1_01_strm_1</Item>
+    <Item>hw1_occl_00</Item>
+    <Item>hw1_occl_01</Item>
+    <Item>pw-dmv_milo_</Item>
+	</proxies>
+</SInteriorOrderData>

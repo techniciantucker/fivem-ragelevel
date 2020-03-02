@@ -1,0 +1,124 @@
+<html>
+ <head>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+ </head>
+ <body>
+  <img id="cursor">
+  <div class="dialog">
+   <div id="characters" class="characters"></div>
+   <div class="buttons" id="characterButtons">
+    <button style="background-color: #00d815;" onclick="selectCharacter()">Seleccionar</button>
+    <button style="background-color: #0879b2;" onclick="newCharacter()">Nuevo</button>
+    <button style="background-color: #e40000;" onclick="deleteCharacter()">Borrar</button>
+   </div>
+   <div id="register" class="characters" style="display: none;">
+    <h2 style="font-weight: 500; font-size: 24px; text-align: center; color: white;">Nuevo Caracter</h2>
+    <form id="register" style="margin: 0; padding: 5px;">
+     <h2 style="font-weight: 500; font-size: 12px; text-align: left; color: white;">Nombre</h2>	
+     <input id="firstname" type="text" placeholder="Christopher" required pattern="[A-Za-z]{3,32}"><br>
+     <h2 style="font-weight: 500; font-size: 12px; text-align: left; color: white;">Apellido</h2>	
+     <input id="lastname" type="text" placeholder="Pike" required pattern="[A-Za-z]{3,32}"><br>
+     <h2 style="font-weight: 500; font-size: 12px; text-align: left; color: white;">Fecha de nacimiento</h2>	
+     <input id="dob" type="text" placeholder="29/06/1975" required pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}"><br>
+     <h2 style="font-weight: 500; font-size: 12px; text-align: left; color: white;">Nombre de Twitter (No incluya el @)</h2>	
+     <input id="twitter" type="text" placeholder="TwitterName" required pattern="[A-Za-z]{3,32}"><br>
+     <h2 style="font-weight: 500; font-size: 12px; text-align: left; color: white;">Genero</h2>	
+     <select id="gender">
+      <option value="Male" selected>Hombre</option>
+      <option value="Female">Mujer</option>
+     </select>
+     <h2 style="font-weight: 500; font-size: 12px; text-align: left; color: white;">Historia del personaje</h2>	
+     <textarea id="backstory" placeholder="Character Backstory" minlength="200"></textarea>
+     <br>
+     <br>
+     <button style="background-color: #0879b2; height: 5%;" id="submit" type="submit">Enviar</button>
+    </form>
+   </div>
+   <div class="buttons" id="registerButtons" style="display: none;">
+    <button style="background-color: #e40000;" onclick="showCharacters()">Cerrar</button>
+   </div>
+   <div class="changelog">
+    <h2 style="font-weight: 500; font-size: 24px; text-align: center; color: white;">Changelog</h2>
+    <div class="character">
+     <p style="font-weight: bolder;">v1.1.8<font style="float: right">07/04/2019</font></font></p>
+     <ul style="list-style-type:square; color: white;">
+<li> Autobús de prisión actualizado </li>
+     <li> ID agregada / payTow para EMS y PD </li>
+     <li> Se ha bloqueado al conductor del autobús de la prisión en caso de sufrir un accidente </li>
+     <li> Se agregó / rack & / unrack para la policía </li>
+     <li> Paga clasificada de EMS fija </li>
+     <li> Arreglo resuelto cuando entras sin salud </li>
+     <li> Pantalla de carga actualizada </li>
+     <li> Bicicleta de policía reemplazada por Harley </li>
+     <li> Se agregó la capacidad para que los mecánicos bloqueen las plataformas planas </li>
+     <li> Se agregó Interior a la sede del mecánico </li>
+     <li> Sistema de reaparición actualizado </li>
+     <li> Se agregó una tarifa por reaparición cuando el EMS y la policía están en línea </li>
+     <li> Animación fija con reabastecimiento de combustible en estaciones de servicio </li>
+     <li> Se agregaron nuevas aduanas de LS detrás de Bennys para camiones y otros vehículos grandes </li>
+     <li> Se quitó el garaje de Wong Place </li>
+     <li> Intente arreglar un error del garaje (problema con el vehículo dañado) </li>
+     <li> Se agregó una solución a las personas que cerraron sesión en las casas (por favor, no cierre la sesión dentro de las casas) </li>
+     <li> Se solucionó el problema de que las personas se atascaran en la cárcel sin tiempo </li>
+     <li> Se agregó el menú de ropa cuando apareces por primera vez después de la creación del personaje </li>
+     <li> Error corregido con cerraduras de puertas </li>
+     <li> Barra agregada al lado de Legion Sq </li>
+     <li> Tequila esta cerrado hasta nuevo aviso </li>
+     <li> Se eliminaron los cigarrillos del hospital </li>
+    </div>
+    <div class="character">
+     <p style="font-weight: bolder;">v1.1.7<font style="float: right">06/04/2019</font></font></p>
+     <ul style="list-style-type:square; color: white;">
+      <li> Se cambió el hipódromo de grava a pavimento </li>
+      <li> Se comenzó a trabajar en las nuevas casas de Mirror Park </li>
+      <li> Agregado Anvil Hangar </li>
+      <li> Verificación de requisitos de Steam & Discord en la conexión </li>
+      <li> Sistema de combustible de bicicletas en la lista negra </li>
+      <li> Notificaciones agregadas a los textos </li>
+      <li> Se agregó la posibilidad de usar vendajes en otros </li>
+      <li> Los kits medicos fijos no funcionan </li>
+      <li> Error en el garaje del apartamento </li>
+      <li> Corrección de MDT </li>
+      <li> Armas fijas que no se muestran en la espalda (se han roto durante 2 semanas) </li>
+      <li> Se agregó / rack & / unrack para la policía </li>
+      <li> W ahora también puede cerrar la GUI de armas </li>
+      <li> Intento de corregir el error de envío de la policía </li>
+      <li> Salto del coche cuando no usas el cinturon 25+ KMH </li>
+      <li> Se quitó la puerta del interior de la prisión </li>
+      <li> Error corregido con Chopshop </li>
+      <li> Añadida Nueva Ambulancia EMS </li>
+      <li> Capacidad agregada a / setSpawnPoint Inside Apartments </li>
+      <li> Cinturones de seguridad reforzados en el autobús de la prisión </li>
+      <li> Oficina agregada de Parsons </li>
+      <li> Se agregó la oficina de médicos a la zona de la playa </li>
+      <li> Se corrigió un error interno al ver a las personas </li>
+      <li> Sistema de instancia añadido </li>
+      <li> Precios fijos de Swann </li>
+      <li> Se agregó un nuevo barco de policía y moto acuática </li>
+      <li> Se repararon las identificaciones falsas </li>
+    </div>
+   </div>
+  </div>
+  <script src="script.js" type="text/javascript"></script>
+ </body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

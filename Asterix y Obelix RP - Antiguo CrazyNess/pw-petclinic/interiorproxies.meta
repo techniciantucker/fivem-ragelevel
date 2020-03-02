@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4270" />
+  <proxies>
+	<Item>brown_vetclinic_milo_</Item>
+    <Item>pw-vetexterior</Item>
+	</proxies>
+</SInteriorOrderData>

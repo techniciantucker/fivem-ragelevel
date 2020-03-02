@@ -1,0 +1,233 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	
+	background-size: 20%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	font-family: 'Roboto', sans-serif !important;
+	user-select: none;
+}
+
+#background {
+	width: 100%;
+	height: 100%;
+
+	background-image: url(../backgrounds/background1.jpg);
+	background-size: cover;
+
+	position: fixed;
+
+	left: 0;
+	right: 0;
+	z-index: 1;
+
+	transform: scale(1.03);
+	background-position: 0px 0px;
+	display: block;
+}
+
+#blackBackground {
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0,0,0,1.0);
+
+	position: fixed;
+
+	left: 0;
+	right: 0;
+	z-index: 1;
+
+	transform: scale(1.03);
+	background-position: 0px 0px;
+	display: block;
+}
+
+.backgroundInformation {
+	position: relative;
+	width: 100%;
+	height: 500%;
+	right: 50%;
+	background-color: rgba(0,0,0,0.6);
+	transform: skewY(100deg);
+}
+
+#logo {
+	width: 100%;
+	height: 100%;
+	background-image: url(logo.png);
+	background-size: 15%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+.log {
+	color: rgba(255, 255, 255, 0.46);
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+.log-top-right {
+	top: 20px;
+	right: 20px;
+	text-align: right;
+	display: none;
+}
+
+.loading-container {
+	position: absolute;
+	left: 4%;
+	right: 4%;
+	bottom: 30%;
+
+	z-index: 5;
+
+	color: #fff;
+
+	font-family: Arial;
+}
+
+.loading-labels {
+	width: 100%;
+	height: 20px;
+
+	margin-left: 2px;
+	margin-right: 3px;
+
+	margin-top: 5px;
+	margin-bottom: 12px;
+
+	padding: 5px;
+	text-align: center;
+	position: relative;
+	display: inline;
+	white-space: nowrap;
+}
+
+.loading-labels div {
+	display: none;
+	text-align: left;
+	font-size: 20px;
+	position: relative;
+}
+
+.loading-bar-labels {
+	text-align: center;
+	padding-top: 2px;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+.loading-bar-container {
+	width: 35%;
+	background-color: rgba(140, 140, 140, .9);
+	height: 20px;
+
+	margin-left: 2px;
+	margin-right: 3px;
+
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+	/*box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;*/
+	background-color: rgba(0,0,0,0.0);
+	/*border-radius: 6px;*/
+	padding: 5px;
+	text-align: left;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	white-space: nowrap;
+}
+
+.loading-bar {
+	width: 0%;
+	height: 20px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px 1px rgba(16,52,166,1.0);
+
+	background-size: 30px 30px;	  
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+	-webkit-animation: animate-stripes 3s linear infinite;
+
+	display: none;
+
+	transition: width 0.3s;
+	transition-timing-function: ease-out;
+}
+
+.bgcolor-first {
+	background-color: rgba(16,52,166,1.0);
+}
+
+.bgcolor-second {
+	background-color: rgba(16,52,166,1.0);
+}
+
+.bgcolor-third {
+	background-color: rgba(16,52,166,1.0);
+}
+
+.bgcolor-fourth {
+	background-color: rgba(16,52,166,1.0);
+}
+
+.color-first {
+	color: white;
+}
+
+.color-second {
+	color: white;
+}
+
+.color-third {
+	color: white;
+}
+
+.color-fourth {
+	color: white;
+}
+
+@keyframes animate-stripes {
+	0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+.informationText {
+	position: absolute;
+	left: 4.5%;
+	right: 4.5%;
+	width: 35%;
+	color: #fff;
+	bottom: 37.5%;
+	font-family: Arial;
+}
+
+.infoTitle {
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	color: rgba(137,207,240,1.0);
+	font-size: 22px;
+}
+
+.infoInfo {
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	left: 25px;
+	font-size: 14px;
+	color: white;
+}
+
+.infoDiscord {
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	font-size: 16px;
+}
+
+.infoForums {
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	font-size: 16px;
+}

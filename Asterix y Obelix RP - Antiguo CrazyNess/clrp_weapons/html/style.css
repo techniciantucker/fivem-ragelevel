@@ -1,0 +1,137 @@
+body {
+ overflow: hidden;
+ display: none;
+ font-family: 'Roboto', sans-serif;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/*
+ * Hidden scrollbar
+ */
+::-webkit-scrollbar{
+ width: 0px;
+}
+
+::-webkit-scrollbar-track-piece{
+ background-color: transparent;
+ -webkit-border-radius: 6px;
+}
+
+.content {
+  display: block;
+  width: 30%;
+  height: 45%;
+  position: absolute;
+  left: 18%;
+  bottom: 6%;
+  margin: auto;
+  /*background-color: rgba(40, 40, 40, 0.4);  */
+}
+
+.helpContent {
+  display: block;
+  width: 30%;
+  height: 5%;
+  position: absolute;
+  left: 18%;
+  bottom: 1%;
+  background-color: rgba(0, 82, 165, 0.75);
+}
+
+.helpContent p {
+ padding-left: 10px;
+ font-size: 14px;
+ line-height: 6px;
+ text-align: center;
+ color: rgba(255, 255, 255, 0.7);  
+}
+
+.melee {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 21.5%;
+  height: 90%;
+  bottom: 1.2%;
+  left: 1.2%;
+  position: absolute;
+}
+
+.pistol {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 21.5%;
+  height: 90%;
+  bottom: 1.2%;
+  left: 25.7%;
+  position: absolute;
+}
+
+.rifle {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 21.5%;
+  height: 90%;
+  bottom: 1.2%;
+  left: 50.2%;
+  position: absolute;
+}
+
+.other {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 21.5%;
+  height: 90%;
+  bottom: 1.2%;
+  left: 74.7%;
+  position: absolute;
+}
+
+.weaponModel {
+  display: block;
+  width: 110%;
+  height: 8%;
+  background-color: rgba(0, 82, 165, 0.75);
+}
+
+.weaponTitle {
+ font-size: 20px;
+ margin-top: 4%;
+ text-align: center;
+ color: rgba(255, 255, 255, 0.8);  
+}
+
+.newWeapon {
+  display: block;
+  width: 110%;
+  height: 14%;
+  margin-bottom: 5px;
+  margin-top: -20px;
+  background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.newWeapon h5 {
+ position: relative;
+ top: 4%;
+ left: 2.5%;
+ text-align: center;
+ font-size: 14px;
+ color: rgba(255, 255, 255, 0.8);  
+}
+
+.newWeapon p {
+ position: relative;
+ top: -17.5%;
+ left: 5%;
+ line-height: 5px;
+ font-size: 12px;
+ color: rgba(255, 255, 255, 0.7);  
+}
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4510" />
+  <proxies>
+	<Item>dt1_occl_04</Item>
+  <Item>dt1_occl_05</Item>
+	<Item>hei_dt1_occl_04</Item>
+  <Item>hei_dt1_occl_05</Item>
+  <Item>sc1_occl_03</Item>
+  <Item>hei_sc1_occl_03</Item>
+  <Item>lr_sc1_occl_03</Item>
+  <Item>pw-bikeshop_milo_</Item>   
+	</proxies>
+</SInteriorOrderData>

@@ -1,0 +1,18 @@
+function AddTextEntry(key, value)
+	Citizen.InvokeNative(GetHashKey("ADD_TEXT_ENTRY"), key, value)
+end
+Citizen.CreateThread(function()
+    AddTextEntry('jeep2012', 'Wrangler JK') -- Enter Gamename from vehicles.lua and what you want it to display.
+    AddTextEntry('Wrangler', 'Wrangler JKU')
+    AddTextEntry('DEMONHAWK', 'Jeep Demonhawk')
+	AddTextEntry('Trackhawk', 'Jeep Trackhawk')
+	AddTextEntry('SRT8', '2015 Jeep SR8')
+	AddTextEntry('SRT8B', '2015 Jeep SRT-8 Black')
+	AddTextEntry('wagoneer', '1986 Jeep Wagoneer')
+	AddTextEntry('CHERS84', 'Cherokee  Sport 1984  Off Road 4x4')
+	AddTextEntry('crawler', 'Offroad Crawler')
+	AddTextEntry('RENEGADE', '2018 Jeep Renegade')	
+	AddTextEntry('TRAILCAT', '2016 Jeep WranglerTrailcat')
+	AddTextEntry('GLAD65', '1965 Jeep Gladiator')
+	AddTextEntry('GLAD65B', '1965 Jeep Gladiator')
+end)

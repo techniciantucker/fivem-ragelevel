@@ -1,0 +1,10 @@
+function AddTextEntry(key, value)
+	Citizen.InvokeNative(GetHashKey("ADD_TEXT_ENTRY"), key, value)
+end
+Citizen.CreateThread(function()
+    AddTextEntry('BGNX', '1987 Buick GNX')
+    AddTextEntry('ROADMASTER', '1996 Buick Roadmaster')
+    AddTextEntry('rmaster', '1957 Buick Roadmaster')
+    AddTextEntry('cnty', '1986 Buick Sentry')
+    AddTextEntry('GSXB', ' 1970 Buick Skylark')
+end)

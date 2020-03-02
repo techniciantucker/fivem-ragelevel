@@ -1,0 +1,135 @@
+body {
+	font-family: "Segoe UI", "Segoe UI Symbol", "Segoe UI Emoji",  Arial, sans-serif;
+	background-color: transparent; /* change to TRANSPARENT */
+	overflow: hidden;
+}
+
+#tsContainer{
+	color: white;
+	/*top: 100px;*/
+	top: 10%;
+	left: 20%; /*495px;*/
+	margin-top: -50px;
+	margin-left: -300px;
+	width: 475px;
+	height: 450px;
+	position: fixed;/*absolute;*/
+	background: rgba(25, 25, 25, 0.9);
+}
+
+#tatNamesContainer{
+	color: white;
+	/*top: 100px;*/
+	top: 10%;
+	right: 20%; /*495px;*/
+	margin-top: -50px;
+	margin-right: -300px;
+	width: 500px;
+	height: 760px;
+	position: fixed;/*absolute;*/
+	background: rgba(25, 25, 25, 0.7);
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar-button{ 
+	display: block; 
+	height: 13px; 
+	border-radius: 0px; 
+	background-color: #AAA; 
+}
+::-webkit-scrollbar-button:hover{ 
+	background-color: #AAA; 
+} 
+::-webkit-scrollbar-thumb{ 
+	background-color: #5badd9; 
+} 
+::-webkit-scrollbar-thumb:hover{ 
+	background-color: #CCC; 
+} 
+::-webkit-scrollbar-track{ 
+	background-color: #5c5c5c; 
+} 
+::-webkit-scrollbar-track:hover{ 
+	background-color: #CCC; 
+} 
+::-webkit-scrollbar{ 
+	width: 4px;
+}
+
+.title{
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	margin: 6px;
+	color: white;
+	height: 30px;
+	width: 425px;
+	background: #0C5CBC;
+	margin-top: -4px;
+	padding-left: 7px;
+}
+
+.menuoption{
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	margin: 6px;
+	color: white;
+	height: 30px;
+	width: 425px;
+	background: black;/*#0C5CBC;*/
+	margin-top: -4px;
+	padding-left: 7px;
+}
+
+.menuoption.activecat{
+	background: #2D2D2D;
+	color: white;
+}
+
+.menuoption.selected{
+	background: #25C3C5;
+	color: white;
+}
+
+.tatoption{
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	margin: 6px;
+	color: white;
+	height: 30px;
+	width: 425px;
+	background: black;/*#0C5CBC;*/
+	margin-top: -4px;
+	padding-left: 7px;
+}
+
+.tatoption.selected{
+	background: #25C3C5;
+	color: white;
+}
+
+.saveoption{
+	height: 30px;
+}
+
+.saveoption.selected{
+	background: #1E1E1E;
+}
+
+.exitoption{
+	height: 30px;
+}
+
+.exitoption.selected{
+	background: #1E1E1E; 
+}
+
+.resetoption{
+	height: 30px;
+}
+
+.resetoption.selected{
+	background: #1E1E1E; 
+}

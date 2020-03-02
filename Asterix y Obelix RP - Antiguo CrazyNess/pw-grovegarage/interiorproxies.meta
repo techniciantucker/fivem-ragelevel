@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2770" />
+  <proxies>
+	<Item>lr_sc1_21_strm_0</Item>
+    <Item>lr_sc1_rd_strm_0</Item>
+    <Item>pw-grovegarage</Item>
+    <Item>pw-grovegarageextras</Item>
+	</proxies>
+</SInteriorOrderData>

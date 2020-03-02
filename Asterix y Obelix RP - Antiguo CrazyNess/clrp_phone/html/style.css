@@ -1,0 +1,739 @@
+body {
+ overflow: hidden;
+ display: none;
+ font-family: 'Roboto', sans-serif;
+ background: transparent !important;
+}
+
+/* Hidden scrollbar */
+::-webkit-scrollbar{
+ width: 0px;
+}
+
+::-webkit-scrollbar-track-piece{
+ background-color: transparent;
+ -webkit-border-radius: 6px;
+}
+
+#background {
+ background-color: #e5e5e5;
+ width: 100%;
+ height: 100%;
+ overflow-x: scroll;
+}
+
+.phone {
+  background: #ccc;
+  border-radius: 35px;
+  height: 70%;
+  margin: 5px auto;
+  padding: 8px;
+  width: 20%;
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+}
+
+.screen {
+  background: #333;
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+  padding: 40px 10px 10px 10px;
+}
+
+.earpiece {
+  width: 70px;
+  height: 10px;
+  margin: 0 auto 40px auto;
+  background: #444;
+  border-radius: 30px;
+}
+
+.home-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 35%;
+  border: solid 2px #444;
+  background: #333;
+  margin: 7.5px auto;
+  cursor: pointer;
+}
+
+.display {
+  width: 100%;
+  height: 81.5%;
+  background-image: url(https://capitalliferp.com/img/phone/wafflewanker.png);
+  overflow-y: scroll;
+  background-size: 107.5%;
+  background-position: center;
+}
+
+.phone-info {
+  background: #2EAAE1;
+  color: #fff;
+  padding-left: 5px;
+}
+
+.phone-info .fa-battery-half {
+  float: right;
+  position: absolute;
+  right: 6%;
+  top: 13.5%;
+}
+
+.app .fa, .fab {
+  font-size: 2.4em;
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  color: #f1f1f1;
+}
+
+.app {
+  width: 53px;
+  height: 53px;
+  display: inline-block !important;
+  border-radius: 5px;
+  margin: 0 3.5px;
+  margin-bottom: 15px;
+}
+
+
+.appList { 
+ position: absolute;
+ bottom: 10%;
+}
+
+/* Calling */
+
+#startCall button {
+ position: absolute;
+ left: 9%;
+ bottom: 20%;
+ color: #f1f1f1;
+ width: 80%;
+ height: 8%;
+ font-size: 24px;
+ text-align: center;
+ background-color: #b70303; 
+ border: 0;
+ border-radius: 3px;
+ margin: 4px 0;
+}
+
+#callWaiting button {
+ position: absolute;
+ left: 9%;
+ bottom: 20%;
+ color: #f1f1f1;
+ width: 80%;
+ height: 8%;
+ font-size: 24px;
+ text-align: center;
+ background-color: #b70303; 
+ border: 0;
+ border-radius: 3px;
+ margin: 4px 0;
+}
+
+#callInProgress button {
+ position: absolute;
+ left: 9%;
+ bottom: 20%;
+ color: #f1f1f1;
+ width: 80%;
+ height: 8%;
+ font-size: 24px;
+ text-align: center;
+ background-color: #b70303; 
+ border: 0;
+ border-radius: 3px;
+ margin: 4px 0;
+}
+
+/* Contacts */
+#contactsPage .contact {
+ padding: 10px;
+ padding-bottom: 5px;
+ position: relative;
+ color: black;
+ height: 14%;
+ width: 98%;
+}
+
+#contactsPage .contact:hover {
+ background-color: #e0f1ff; 
+}
+
+#contactsPage .icons {
+ width:34px;
+ height:auto;
+ text-align:center;
+ position:relative;
+ bottom: 15px;
+ float:right;
+ font-size: 24px;
+ color: #424242;
+}
+
+
+#addContacts input[type=text] {
+ border: 2px solid #aaa;
+ border-radius: 4px;
+ outline: none;
+ padding: 4px;
+ box-sizing: border-box;
+}
+
+#addContact {
+ position: absolute;
+ width: 12.5%;
+ height: 15%;
+ border: 2px solid #aaa;
+ border-radius: 8px;
+ background-color: #f1f1f1;
+ right: 7%;
+ bottom: 7.5%;
+}
+
+#addContact .contactButtons {
+ position: absolute;
+ left: 2.5%;
+ bottom: 5%;
+}
+
+/* Messages */
+.message {
+ padding: 10px;
+ padding-bottom: 5px;
+ position: relative;
+ word-wrap: break-word;
+ color: black;
+ width: 100%;
+}
+
+#messagePage .background {
+ background-color: #e5e5e5;
+ width: 100%;
+ height: 94%;
+ overflow-x: scroll;
+}
+
+.message:hover {
+ background-color: #e0f1ff; 
+}
+
+.messageTo {
+ padding: 10px;
+ padding-bottom: 10px;
+ margin-left: 5px;
+ margin-top: 2px;
+ position: relative;
+ word-wrap: break-word;
+ color: white;
+ width: 80%;
+ float: left;
+ border-radius: 4px;
+ background-color: #41b5f4;
+}
+
+.messageFrom {
+ padding: 10px;
+ padding-bottom: 10px;
+ margin-right: 5px;
+ margin-top: 2px;
+ position: relative;
+ word-wrap: break-word;
+ color: white;
+ width: 80%;
+ float: right;
+ text-align: left;
+ border-radius: 4px;
+ background-color: #59f442;
+}
+
+
+/* Twitter */
+#twitterPage .background {
+ background-color: #e5e5e5;
+ width: 100%;
+ height: 95%;
+ overflow-x: scroll;
+}
+
+#twitterPage .newTweet {
+ padding: 10px;
+ padding-bottom: 10px;
+ position: relative;
+ word-wrap: break-word;
+ color: black;
+ width: 100%;
+}
+
+#twitterPage .newTweet:hover {
+ background-color: white;
+}
+
+
+/* Services */
+#servicesPage textarea {
+ position: relative;
+ background-color: #f1f1f1; 
+ resize: none;
+ width: 88%;
+ height: 60%;
+ font-size: 24px;
+ margin: 4px 0;
+ outline: none;
+ padding: 4px;
+ position: absolute;
+ left: 6%;
+ top: 20%;
+} 
+
+#servicesPage .buttons {
+ position: absolute;
+ bottom: 10%;
+ left: 6%;
+} 
+
+/* Banking */
+#bankingPage .background {
+ background-color: #e5e5e5;
+ width: 100%;
+ height: 100%;
+}
+
+#bankingPage .balance {
+ position: absolute;
+ background-color: #ffffff;
+ width: 85%;
+ border-radius: 4px;
+ left: 7.5%;
+ top: 18%;
+ padding-left: 15px;
+ padding-top: 10px;
+}
+
+#bankingPage .activityTitle {
+ position: absolute;
+ left: 7.5%;
+ top: 37%;
+ font-size: 24px; 
+ padding-bottom: 5px;
+}
+
+#bankingPage .activity {
+ position: absolute;
+ width: 90%;
+ height: 42%;
+ border-radius: 4px;
+ left: 5%;
+ top: 41%;
+ padding-left: 10px;
+ padding-top: 10px;
+ overflow-y: scroll;
+}
+
+#bankingPage .payment p {
+ font-size: 20px;
+ padding-left: 1px;
+}
+
+#bankingPage .buttons {
+ position: absolute;
+ width: 90%;
+ height: 8%;
+ border-radius: 4px;
+ left: 5%;
+ bottom: 9%;
+ padding-left: 10px;
+ padding-top: 10px;
+ background-color: white;
+}
+
+#bankingPage .btn-circle {
+ width: 38px;
+ height: 38px;
+ padding: 6px 0px;
+ border-radius: 25px;
+ text-align: center;
+ font-size: 16px;
+ line-height: 1.42857;
+}
+
+#bankingPage .sendMoney {
+ position: inherit;
+ bottom: 0%;
+ left: 7.5%;
+}
+
+#bankingPage .getBills {
+ position: inherit;
+ bottom: 0%;
+ right: 7.5%;
+}
+
+#bankingPage .payBills {
+ position: inherit;
+ bottom: 0%;
+ right: 44.25%;
+}
+
+#bankingPage small {
+ display: block;  
+ text-align: center; 
+ font-weight: 455;
+}
+
+#sendMoney .background {
+ background-color: #e5e5e5;
+ width: 100%;
+ height: 100%;
+}
+
+#sendMoney .activityTitle {
+ position: absolute;
+ left: 27%;
+ top: 20%;
+ font-size: 24px; 
+ text-align: center;
+ padding-bottom: 5px;
+}
+
+#sendMoney .activity {
+ position: absolute;
+ width: 87.5%;
+ height: 42%;
+ border-radius: 4px;
+ left: 5%;
+ top: 27%;
+ padding-left: 10px;
+ padding-top: 10px;
+ overflow-y: scroll;
+}
+
+#sendMoney .disclaimer {
+ position: absolute;
+ background-color: #bfdefc;
+ width: 85%;
+ border-radius: 4px;
+ left: 7.5%;
+ bottom: 43.5%;
+ padding-left: 10px;
+ padding-top: 10px;
+}
+
+#sendMoney .info {
+ position: absolute;
+ width: 90%;
+ left: 4%;
+ bottom: 23.5%;
+ font-size: 16px;
+ word-wrap: break-word;
+ text-align: center;
+}
+
+#sendMoney .transfer {
+ position: absolute;
+ width: 84.5%;
+ height: 7.5%;
+ border-radius: 32px;
+ left: 7.5%;
+ bottom: 12.5%;
+ padding-left: 10px;
+}
+
+#sendMoney input {
+ text-align: left; 
+ width: 100%;
+ height: 15%;
+ padding: 10px;
+ margin-bottom: 7.5px;
+ border-radius: 5px;
+ left: 1px;
+ border: 1px solid #c2c4c6;
+}
+
+
+/* Stock Market */
+
+#stockPage .stockItem {
+ padding: 10px;
+ padding-bottom: 5px;
+ position: relative;
+ color: black;
+ height: 15%;
+ width: 98%;
+}
+
+#stockPage .stockItem:hover {
+ background-color: #d2e8f2;
+}
+
+#stockPage .stockItem .buy {
+ float: right; 
+ padding-top: 2%;
+}
+
+#stockPage .stockItem .increase {
+ position: absolute;
+ font-size: 48px;
+ color: green;
+ left: 47.5%;
+ top: 20%
+}
+
+#stockPage .stockItem .decrease {
+ position: absolute;
+ font-size: 48px;
+ color: red;
+ left: 47.5%;
+ top: 20%
+}
+
+
+#myStockPage .info {
+ position: absolute;
+ background-color: #ffffff;
+ width: 85%;
+ border-radius: 4px;
+ left: 7.5%;
+ top: 18%;
+ padding: 15px;
+}
+
+#myStockPage .buttons {
+ position: absolute;
+ width: 85%;
+ left: 7.5%;
+ bottom: 11%;
+}
+
+#myStockPage input {
+ text-align: left; 
+ width: 100%;
+ height: 15%;
+ padding: 10px;
+ margin-bottom: 12px;
+ border-radius: 5px;
+ left: 1px;
+ border: 1px solid #c2c4c6;
+}
+
+/* Weather App */
+#weatherPage .background {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://i.pinimg.com/originals/29/cb/d5/29cbd5c73bac071fb7ade09bcac4feb8.gif);
+}
+
+#weatherPage .main {
+ position: absolute;
+ text-align: center;
+ color: white;
+ width: 85%;
+ border-radius: 4px;
+ left: 7.5%;
+ top: 18%;
+ padding-top: 10px;
+}
+
+#weatherPage .nextWeather {
+ background-color: rgba(196, 218, 255, 0.10);
+ color: white;
+ font-weight: bold;
+ width: 95%;
+ height: 12%;
+ left: 2%;
+ border-radius: 4px;
+ padding-left: 15px;
+ padding-top: 10px;
+ margin-bottom: 5px;
+}
+
+#weatherPage .currentWeather {
+ background-color: rgba(255, 238, 0, 0.11);
+ color: white;
+ font-weight: bold;
+ width: 95%;
+ height: 12%;
+ left: 2%;
+ border-radius: 4px;
+ padding-left: 15px;
+ padding-top: 10px;
+ margin-bottom: 5px;
+}
+
+#weatherPage .weatherList {
+ position: absolute;
+ width: 91%;
+ height: 50%;
+ bottom: 7.5%;
+ left: 6.5%;
+ overflow-x: scroll;
+}
+
+
+/* Dark Web */
+#deepWebPage .background {
+ background-color: #e5e5e5;
+ width: 100%;
+ height: 95%;
+ overflow-x: scroll;
+}
+
+#deepWebPage .newTweet {
+ padding: 10px;
+ padding-bottom: 10px;
+ position: relative;
+ word-wrap: break-word;
+ color: black;
+ width: 100%;
+}
+
+#deepWebPage .newTweet:hover {
+ background-color: #d2e8f2;
+}
+
+/* Housing */
+
+#housingPage .newHouse {
+ padding: 10px;
+ padding-bottom: 10px;
+ position: relative;
+ word-wrap: break-word;
+ color: black;
+ width: 100%;
+}
+
+#housingPage .newHouse:hover {
+ background-color: #d2e8f2;
+}
+
+/* Trucking */
+
+#truckingPage .addJob {
+ padding: 10px;
+ padding-bottom: 10px;
+ position: relative;
+ word-wrap: break-word;
+ color: black;
+ width: 100%;
+}
+
+#truckingPage .addJob:hover {
+ background-color: #d2e8f2;
+}
+
+/* Emailing */
+
+#emailPage .newMail {
+ padding: 10px;
+ padding-bottom: 10px;
+ position: relative;
+ word-wrap: break-word;
+ color: black;
+ width: 100%;
+}
+
+#emailPage .newMail:hover {
+ background-color: #d2e8f2;
+}
+
+
+/* Settings */
+#settingsPage .newSetting {
+ width: 100%;
+ height: 10%;
+ background-color: #e5e5e5;
+}
+
+#settingsPage .newSetting:hover {
+ background-color: #d2e8f2;
+}
+
+#settingsPage p {
+ font-size: 20px;
+ padding-top: 3.5%;
+ padding-left: 1%;
+}
+
+
+/* The switch - the box around the slider */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  float:right;
+  top: -85%;
+  right: 5%;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input.default:checked + .slider {
+  background-color: #f44336;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+select {
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  height: 27.5px;
+  float:right;
+  top: -82%;
+  right: 5%;
+}
+
+/* Garage */
+#garagePage .newVehicle {
+ padding: 10px;
+ padding-bottom: 10px;
+ position: relative;
+ word-wrap: break-word;
+ color: black;
+ width: 100%;
+}
+
+#garagePage .newVehicle:hover {
+ background-color: #d2e8f2;
+}

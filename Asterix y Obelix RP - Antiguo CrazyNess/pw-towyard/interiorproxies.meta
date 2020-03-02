@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4445" />
+  <proxies>
+	<Item>cs4_05</Item>
+    <Item>cs4_05_strm_1</Item>
+    <Item>Flywheels</Item>
+    <Item>lr_cs4_05</Item>
+    <Item>lr_cs4_05_critical_0</Item>
+    <Item>lr_cs4_05_long_0</Item>
+    <Item>lr_cs4_05_strm_1</Item>
+    <Item>sandyyard</Item>
+	</proxies>
+</SInteriorOrderData>

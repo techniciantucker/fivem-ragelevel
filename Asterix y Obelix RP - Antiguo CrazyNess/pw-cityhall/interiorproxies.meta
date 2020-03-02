@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4540" />
+  <proxies>
+	<Item>bh1_occl_05</Item>
+    <Item>clawles_int_placement</Item>
+    <Item>int_cityhall_milo_</Item>
+	</proxies>
+</SInteriorOrderData>

@@ -1,0 +1,357 @@
+body {
+ overflow: hidden;
+ display: none;
+ font-family: 'Roboto', sans-serif;
+ background-color: transparent !important;
+}
+
+/*
+ * Hidden scrollbar
+ */
+::-webkit-scrollbar{
+ width: 0px;
+}
+
+::-webkit-scrollbar-track-piece{
+ background-color: transparent;
+ -webkit-border-radius: 6px;
+}
+
+.content {
+  display: block;
+  width: 70%;
+  height: 60%;
+  position: absolute;
+  left: 15%;
+  bottom: 20%;
+  margin: auto;
+}
+
+.display {
+  display: block;
+  width: 100%;
+  height: 90%;
+  background-color: #E9E9E9;  
+}
+
+.navBar {
+  background-color: #2A3B4B;  
+  overflow: hidden;
+  height: 10%;
+}
+
+.navBar h2 {
+  display: block;
+  color: white;  
+  padding: 10px 12px;
+  font-size: 20px;
+  position: absolute;
+}
+
+.navBar h2:hover {
+ background-color: #344555;
+}
+
+#charges .chargeList {
+  width: 75%;
+  height: 92%;
+  margin-top: 4%;
+  float: left;
+  overflow-x: scroll;
+}
+
+.chargeList .newCharge {
+  width: 98%;
+  height: 6%;
+  background-color: #E9E9E9;
+}
+
+.chargeList .newCharge:hover {
+ background-color: #f1f1f1;
+}
+
+.chargeList .newCharge p {
+ color: black;
+ padding-left: 20px;
+ padding-right: 20px;
+ font-size: 20px;
+}
+
+
+#charges .suspectInfo {
+  width: 25%;
+  height: 100%;
+  float: right;
+}
+
+.suspectData {
+  height: 60%;
+  width: 24%;
+  position: absolute;
+  top: 20%;
+}
+
+
+.suspectData input {
+ border: 2px solid #aaa;
+ border-radius: 4px;
+ outline: none;
+ padding: 4px;
+ font-size: 16px;
+ box-sizing: border-box;
+ height: 10%;
+ width: 100%
+}
+
+.suspectData textarea {
+ resize: none;
+ width: 100%;
+ height: 40%;
+ font-size:18px;
+ margin: 4px 0;
+ padding: 4px;
+} 
+
+
+#charges input {
+ border: 2px solid #aaa;
+ border-radius: 4px;
+ outline: none;
+ padding: 4px;
+ box-sizing: border-box;
+}
+
+
+
+/* Warrnt List */
+.warrantList {
+ height: 80%;
+ width: 35%;
+ top: 20%;
+ overflow-x: scroll;
+ position: absolute;
+}
+
+.warrantTitle {
+ position: absolute; 
+ width: 98.40%; 
+ left: 1.60%; 
+ top: 12%;
+}
+
+.warrantList .warrant {
+ width: 100%;
+ height: 9%;
+ background-color: #E9E9E9;
+}
+
+.warrantList .warrant:hover {
+ background-color: #f1f1f1;
+}
+
+.warrantList .warrant h4 {
+ color: black; 
+ padding-left: 20px;
+ padding-top: 8px;
+}
+
+.viewWarrant {
+ height: 79%;
+ width: 64%;
+ top: 20%;
+ right: 0.5%;
+ overflow-x: scroll;
+ position: absolute;
+ background-color: white;
+ border-radius: 5px;
+ display: block;
+}
+
+
+.newWarrant {
+ height: 79%;
+ width: 64%;
+ top: 20%;
+ right: 0.5%;
+ padding: 2%;
+ overflow-x: scroll;
+ position: absolute;
+ background-color: white;
+ border-radius: 5px;
+ display: none;
+}
+
+#ncic .ncicSearch {
+  width: 100%;
+  height: 11%;
+  padding: 1%;
+  background-color: white;
+}
+
+#ncic .ncicBody {
+  width: 100%;
+  height: 80%;
+  margin-top: 1.5%;
+  padding: 1%;
+  background-color: white;
+}
+
+#ncic .ncicStuff {
+  width: 20%;
+  height: 100%;
+  background-color: #E9E9E9;
+  border-radius: 8px;
+  float: left;
+}
+
+#ncic .ncicCatagory {
+  height: 10%;
+  background-color: #E9E9E9;
+}
+
+#ncic .ncicCatagory:hover {
+  background-color: #f1f1f1;
+}
+
+#ncic .ncicCatagory h4 {
+ padding-left: 5%;
+ padding-top: 3%;
+ font-size: 22px;
+ font-weight: 440;
+}
+
+#ncic .ncicResult {
+  width: 78%;
+  height: 100%;
+  background-color: #E9E9E9;
+  border-radius: 4px;
+  float: right;
+  overflow-x: scroll;
+}
+
+#ncic .ncicInformation {
+ display: block;
+ padding: 4%;
+}
+
+#ncic .ncicArrests {
+ display: none;
+ padding: 0.5%;
+}
+
+#ncic .ncicVehicles {
+ display: none;
+ padding: 0.5%;
+}
+
+#ncic .ncicWeapons {
+ display: none;
+ padding: 0.5%;
+}
+
+#ncic .ncicHomes {
+ display: none;
+ padding: 0.5%;
+}
+
+#ncic .ncicWarnings {
+ display: none;
+ padding: 0.5%;
+}
+
+#ncic .ncicTags {
+ display: none;
+ padding: 4%;
+}
+
+
+.evidenceList {
+ height: 86%;
+ width: 25%;
+ top: 12%;
+ left: 1%;
+ overflow-x: scroll;
+ position: absolute;
+ border-radius: 4px;
+}
+
+.evidenceList .option {
+ width: 100%;
+ height: 8%;
+ background-color: #E9E9E9;
+}
+
+.evidenceList .option:hover {
+ background-color: #e0f1ff;
+}
+
+#archives .result {
+  width: 72%;
+  height: 86%;
+  overflow-x: scroll;
+  position: absolute;
+  right: 1%;
+  top: 12%;
+}
+
+/* Settings */
+.suspectData p {
+ font-size: 18px;
+ padding-top: 3.5%;
+ padding-left: 5%;
+}
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 65px;
+  height: 34px;
+  float:right;
+  bottom: 10%;
+  right: 5%;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input.default:checked + .slider {
+  background-color: #f44336;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.ncicTags input[type="checkbox"]{
+  width: 17.5px; /*Desired width*/
+  height: 17.5px; /*Desired height*/
+}

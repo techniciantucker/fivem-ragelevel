@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4750" />
+  <proxies>
+	<Item>bh1_occl_01</Item>
+	<Item>hei_bh1_rd_critical_1</Item>
+	<Item>int_mafc_milo_</Item>
+	</proxies>
+</SInteriorOrderData>

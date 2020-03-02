@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://xdob3uslwpzfaizn2vtw.pixelworldrp.com/fonts/pro.min.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid" id="menuContainer" style="display:none; margin-top:80px;">
+        <div class="row">
+            <div class="col-12">
+
+                <div id="menuContents">
+                    <div class="card" style="max-width:350px; min-width:350px;">
+                        <div class="card-header" id="menuTitle">
+                            Featured
+                        </div>
+                        <div class="card-body p-2" style="max-height:600px; overflow-y:scroll;" id="menuContainerOne" >
+                            <div class="btn-group-vertical w-100" id="menuOptions">
+
+                            </div>
+                        
+                        </div>
+                        <div class="card-footer p-0 m-0" id="menuCloseButton" style="display:block">
+                                <button type="button" class="btn btn-block btn-danger closeBtn" data-act="closeMenu">Close Menu</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="formContainer" style="display:none; margin-top:80px;">
+        <div class="row">
+            <div class="col-12">
+
+                <div id="formContents">
+                    <div class="card" id="formDiv">
+                        <div class="card-header" id="formTitle">
+                            Featured
+                        </div>
+                        <div class="card-body p-2" style="max-height:600px; overflow-y:scroll;">
+                            <div class="container-fluid" id="formOptions">
+
+                            </div>
+                        </div>
+                        <div class="card-footer p-0 m-0 text-center" id="formButtons">
+                                <button type="button" class="m-0 btn btn-block btn-sm btn-success submitBtnForm" data-act="submitForm">Confirm / Submit</button>
+                                <button type="button" class="btn btn-sm btn-block btn-danger closeBtnForm m-0" data-act="closeMenu">Close</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container-fluid" id="blipContainerColor" style="display:none; margin-top:80px;" >
+        <div class="row">
+            <div class="col-12">
+
+                <div id="formContents">
+                    <div class="card" id="blipColorDiv" style="max-width:350px;">
+                        <div class="card-header" id="formTitle">
+                            Blip Color
+                        </div>
+                        <div class="card-body p-2" style="max-height:450px; overflow-y:scroll;">
+                            <div class="container-fluid" id="blipColors">
+                                <div class="row mb-2">
+                                    <div class="col-12"><small>Select a Blip Color</small></div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #fefefe" data-act="blipColorSelect" data-ident="0"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #e03232" data-act="blipColorSelect" data-ident="1"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #71cb71" data-act="blipColorSelect" data-ident="2"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #5db6e5" data-act="blipColorSelect" data-ident="3"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #eec64e" data-act="blipColorSelect" data-ident="5"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #c25050" data-act="blipColorSelect" data-ident="6"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #9c6eaf" data-act="blipColorSelect" data-ident="7"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #fe7ac3" data-act="blipColorSelect" data-ident="8"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #f59d79" data-act="blipColorSelect" data-ident="9"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #b18f83" data-act="blipColorSelect" data-ident="10"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #8dcea7" data-act="blipColorSelect" data-ident="11"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #70a8ae" data-act="blipColorSelect" data-ident="12"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #8f7e98" data-act="blipColorSelect" data-ident="14"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #6ac4bf" data-act="blipColorSelect" data-ident="15"></div>
+                                    <div class="col-2 m-1 rounded border border-dark" style="height:20px; background-color: #ea8e50" data-act="blipColorSelect" data-ident="17"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer p-0 m-0 text-center" id="formButtons">
+                            <button type="button" class="btn btn-sm btn-block btn-danger closeBtnForm m-0" data-act="closeMenu">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid" id="blipContainer" style="display:none; margin-top:80px;" >
+        <div class="row">
+            <div class="col-12">
+
+                <div id="formContents">
+                    <div class="card" id="blipDiv" style="max-width:350px;">
+                        <div class="card-header" id="formTitle">
+                            Select a Blip
+                        </div>
+                        <div class="card-body p-2" style="max-height:450px; overflow-y:scroll;">
+                            <div class="container-fluid" id="blipOptions">
+                                <div class="row mb-2">
+                                    <div class="col-12"><small>Select a Blip Image, or if you know the BlipID enter it in the field below</small></div>
+                                </div>
+                                <div class="row justify-content-center">
+
+                                    <img class="m-1" height="16" data-ident="0" src="https://docs.fivem.net/blips/radar_higher.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="1" src="https://docs.fivem.net/blips/radar_level.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="2" src="https://docs.fivem.net/blips/radar_lower.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="3" src="https://docs.fivem.net/blips/radar_police_ped.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="4" src="https://docs.fivem.net/blips/radar_wanted_radius.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="5" src="https://docs.fivem.net/blips/radar_area_blip.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="6" src="https://docs.fivem.net/blips/radar_centre.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="7" src="https://docs.fivem.net/blips/radar_north.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="8" src="https://docs.fivem.net/blips/radar_waypoint.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="9" src="https://docs.fivem.net/blips/radar_radius_blip.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="10" src="https://docs.fivem.net/blips/radar_radius_outline_blip.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="11" src="https://docs.fivem.net/blips/radar_weapon_higher.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="12" src="https://docs.fivem.net/blips/radar_weapon_lower.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="13" src="https://docs.fivem.net/blips/radar_higher_ai.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="14" src="https://docs.fivem.net/blips/radar_lower_ai.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="15" src="https://docs.fivem.net/blips/radar_police_heli_spin.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="16" src="https://docs.fivem.net/blips/radar_police_plane_move.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="27" src="https://docs.fivem.net/blips/radar_mp_crew.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="28" src="https://docs.fivem.net/blips/radar_mp_friendlies.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="36" src="https://docs.fivem.net/blips/radar_cable_car.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="38" src="https://docs.fivem.net/blips/radar_raceflag.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="40" src="https://docs.fivem.net/blips/radar_safehouse.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="41" src="https://docs.fivem.net/blips/radar_police.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="42" src="https://docs.fivem.net/blips/radar_police_chase.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="43" src="https://docs.fivem.net/blips/radar_police_heli.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="47" src="https://docs.fivem.net/blips/radar_snitch.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="50" src="https://docs.fivem.net/blips/radar_crim_carsteal.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="51" src="https://docs.fivem.net/blips/radar_crim_drugs.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="52" src="https://docs.fivem.net/blips/radar_crim_holdups.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="56" src="https://docs.fivem.net/blips/radar_cop_patrol.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="57" src="https://docs.fivem.net/blips/radar_cop_player.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="58" src="https://docs.fivem.net/blips/radar_crim_wanted.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="60" src="https://docs.fivem.net/blips/radar_police_station.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="61" src="https://docs.fivem.net/blips/radar_hospital.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="66" src="https://docs.fivem.net/blips/radar_random_character.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="67" src="https://docs.fivem.net/blips/radar_security_van.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="68" src="https://docs.fivem.net/blips/radar_tow_truck.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="71" src="https://docs.fivem.net/blips/radar_barber.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="72" src="https://docs.fivem.net/blips/radar_car_mod_shop.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="73" src="https://docs.fivem.net/blips/radar_clothes_store.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="75" src="https://docs.fivem.net/blips/radar_tattoo.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="76" src="https://docs.fivem.net/blips/radar_armenian_family.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="77" src="https://docs.fivem.net/blips/radar_lester_family.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="78" src="https://docs.fivem.net/blips/radar_michael_family.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="79" src="https://docs.fivem.net/blips/radar_trevor_family.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="80" src="https://docs.fivem.net/blips/radar_jewelry_heist.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="84" src="https://docs.fivem.net/blips/radar_rampage.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="85" src="https://docs.fivem.net/blips/radar_vinewood_tours.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="86" src="https://docs.fivem.net/blips/radar_lamar_family.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="89" src="https://docs.fivem.net/blips/radar_chinese_strand.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="90" src="https://docs.fivem.net/blips/radar_flight_school.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="93" src="https://docs.fivem.net/blips/radar_bar.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="94" src="https://docs.fivem.net/blips/radar_base_jump.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="96" src="https://docs.fivem.net/blips/radar_biolab_heist.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="100" src="https://docs.fivem.net/blips/radar_car_wash.png" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="102" src="https://docs.fivem.net/blips/radar_comedy_club.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="103" src="https://docs.fivem.net/blips/radar_darts.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="106" src="https://docs.fivem.net/blips/radar_fbi_officers_strand.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="108" src="https://docs.fivem.net/blips/radar_financier_strand.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="109" src="https://docs.fivem.net/blips/radar_golf.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="110" src="https://docs.fivem.net/blips/radar_gun_shop.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="112" src="https://docs.fivem.net/blips/radar_michael_family_exile.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="119" src="https://docs.fivem.net/blips/radar_shooting_range.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="120" src="https://docs.fivem.net/blips/radar_solomon_strand.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="121" src="https://docs.fivem.net/blips/radar_strip_club.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="122" src="https://docs.fivem.net/blips/radar_tennis.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="126" src="https://docs.fivem.net/blips/radar_triathlon.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="127" src="https://docs.fivem.net/blips/radar_off_road_racing.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="128" src="https://docs.fivem.net/blips/radar_gang_cops.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="133" src="https://docs.fivem.net/blips/radar_snitch_red.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="134" src="https://docs.fivem.net/blips/radar_crim_cuff_keys.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="135" src="https://docs.fivem.net/blips/radar_cinema.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="136" src="https://docs.fivem.net/blips/radar_music_venue.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="137" src="https://docs.fivem.net/blips/radar_police_station_blue.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="140" src="https://docs.fivem.net/blips/radar_weed_stash.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="141" src="https://docs.fivem.net/blips/radar_hunting.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="147" src="https://docs.fivem.net/blips/radar_arms_dealing.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="149" src="https://docs.fivem.net/blips/radar_celebrity_theft.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="150" src="https://docs.fivem.net/blips/radar_weapon_assault_rifle.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="151" src="https://docs.fivem.net/blips/radar_weapon_bat.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="152" src="https://docs.fivem.net/blips/radar_weapon_grenade.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="153" src="https://docs.fivem.net/blips/radar_weapon_health.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="154" src="https://docs.fivem.net/blips/radar_weapon_knife.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="155" src="https://docs.fivem.net/blips/radar_weapon_molotov.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="156" src="https://docs.fivem.net/blips/radar_weapon_pistol.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="157" src="https://docs.fivem.net/blips/radar_weapon_rocket.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="158" src="https://docs.fivem.net/blips/radar_weapon_shotgun.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="159" src="https://docs.fivem.net/blips/radar_weapon_smg.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="160" src="https://docs.fivem.net/blips/radar_weapon_sniper.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="161" src="https://docs.fivem.net/blips/radar_mp_noise.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="162" src="https://docs.fivem.net/blips/radar_poi.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="163" src="https://docs.fivem.net/blips/radar_passive.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="164" src="https://docs.fivem.net/blips/radar_usingmenu.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="171" src="https://docs.fivem.net/blips/radar_gang_cops_partner.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="173" src="https://docs.fivem.net/blips/radar_weapon_minigun.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="175" src="https://docs.fivem.net/blips/radar_weapon_armour.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="176" src="https://docs.fivem.net/blips/radar_property_takeover.png" width="16" data-action="blipSelect">
+
+
+                                    <img class="m-1" height="16" data-ident="177" src="https://docs.fivem.net/blips/radar_gang_mexicans_highlight.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="181" src="https://docs.fivem.net/blips/radar_property_takeover_bikers.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="184" src="https://docs.fivem.net/blips/radar_camera.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="185" src="https://docs.fivem.net/blips/radar_centre_red.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="188" src="https://docs.fivem.net/blips/radar_handcuffs_closed_bikers.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="197" src="https://docs.fivem.net/blips/radar_yoga.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="198" src="https://docs.fivem.net/blips/radar_taxi.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="205" src="https://docs.fivem.net/blips/radar_shrink.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="206" src="https://docs.fivem.net/blips/radar_epsilon.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="225" src="https://docs.fivem.net/blips/radar_gang_vehicle.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="226" src="https://docs.fivem.net/blips/radar_gang_vehicle_bikers.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="229" src="https://docs.fivem.net/blips/radar_guncar.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="233" src="https://docs.fivem.net/blips/radar_gang_cops_highlight.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="237" src="https://docs.fivem.net/blips/radar_custody_bikers.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="251" src="https://docs.fivem.net/blips/radar_arms_dealing_air.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="266" src="https://docs.fivem.net/blips/radar_fairground.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="267" src="https://docs.fivem.net/blips/radar_property.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="269" src="https://docs.fivem.net/blips/radar_altruist.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="270" src="https://docs.fivem.net/blips/radar_ai.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="273" src="https://docs.fivem.net/blips/radar_chop.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="274" src="https://docs.fivem.net/blips/radar_dead.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="279" src="https://docs.fivem.net/blips/radar_hooker.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="280" src="https://docs.fivem.net/blips/radar_friend.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="303" src="https://docs.fivem.net/blips/radar_bounty_hit.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="304" src="https://docs.fivem.net/blips/radar_ugc_mission.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="305" src="https://docs.fivem.net/blips/radar_horde.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="306" src="https://docs.fivem.net/blips/radar_cratedrop.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="307" src="https://docs.fivem.net/blips/radar_plane_drop.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="308" src="https://docs.fivem.net/blips/radar_sub.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="309" src="https://docs.fivem.net/blips/radar_race.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="310" src="https://docs.fivem.net/blips/radar_deathmatch.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="311" src="https://docs.fivem.net/blips/radar_arm_wrestling.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="313" src="https://docs.fivem.net/blips/radar_shootingrange_gunshop.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="314" src="https://docs.fivem.net/blips/radar_race_air.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="315" src="https://docs.fivem.net/blips/radar_race_land.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="316" src="https://docs.fivem.net/blips/radar_race_sea.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="317" src="https://docs.fivem.net/blips/radar_tow.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="318" src="https://docs.fivem.net/blips/radar_garbage.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="350" src="https://docs.fivem.net/blips/radar_property_for_sale.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="351" src="https://docs.fivem.net/blips/radar_gang_attack_package.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="352" src="https://docs.fivem.net/blips/radar_martin_madrazzo.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="353" src="https://docs.fivem.net/blips/radar_enemy_heli_spin.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="354" src="https://docs.fivem.net/blips/radar_boost.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="356" src="https://docs.fivem.net/blips/radar_dock.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="358" src="https://docs.fivem.net/blips/radar_golf_flag.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="359" src="https://docs.fivem.net/blips/radar_hangar.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="360" src="https://docs.fivem.net/blips/radar_helipad.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="361" src="https://docs.fivem.net/blips/radar_jerry_can.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="362" src="https://docs.fivem.net/blips/radar_mask.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="363" src="https://docs.fivem.net/blips/radar_heist_prep.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="364" src="https://docs.fivem.net/blips/radar_incapacitated.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="365" src="https://docs.fivem.net/blips/radar_spawn_point_pickup.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="366" src="https://docs.fivem.net/blips/radar_boilersuit.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="367" src="https://docs.fivem.net/blips/radar_completed.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="368" src="https://docs.fivem.net/blips/radar_rockets.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="369" src="https://docs.fivem.net/blips/radar_garage_for_sale.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="370" src="https://docs.fivem.net/blips/radar_helipad_for_sale.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="371" src="https://docs.fivem.net/blips/radar_dock_for_sale.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="372" src="https://docs.fivem.net/blips/radar_hangar_for_sale.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="374" src="https://docs.fivem.net/blips/radar_business.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="375" src="https://docs.fivem.net/blips/radar_business_for_sale.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="376" src="https://docs.fivem.net/blips/radar_race_bike.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="377" src="https://docs.fivem.net/blips/radar_parachute.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="378" src="https://docs.fivem.net/blips/radar_team_deathmatch.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="379" src="https://docs.fivem.net/blips/radar_race_foot.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="380" src="https://docs.fivem.net/blips/radar_vehicle_deathmatch.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="381" src="https://docs.fivem.net/blips/radar_barry.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="382" src="https://docs.fivem.net/blips/radar_dom.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="383" src="https://docs.fivem.net/blips/radar_maryann.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="384" src="https://docs.fivem.net/blips/radar_cletus.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="385" src="https://docs.fivem.net/blips/radar_josh.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="386" src="https://docs.fivem.net/blips/radar_minute.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="387" src="https://docs.fivem.net/blips/radar_omega.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="388" src="https://docs.fivem.net/blips/radar_tonya.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="389" src="https://docs.fivem.net/blips/radar_paparazzo.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="390" src="https://docs.fivem.net/blips/radar_aim.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="398" src="https://docs.fivem.net/blips/radar_creator.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="400" src="https://docs.fivem.net/blips/radar_abigail.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="401" src="https://docs.fivem.net/blips/radar_blimp.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="402" src="https://docs.fivem.net/blips/radar_repair.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="403" src="https://docs.fivem.net/blips/radar_testosterone.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="404" src="https://docs.fivem.net/blips/radar_dinghy.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="405" src="https://docs.fivem.net/blips/radar_fanatic.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="407" src="https://docs.fivem.net/blips/radar_info_icon.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="408" src="https://docs.fivem.net/blips/radar_capture_the_flag.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="409" src="https://docs.fivem.net/blips/radar_last_team_standing.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="410" src="https://docs.fivem.net/blips/radar_boat.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="411" src="https://docs.fivem.net/blips/radar_capture_the_flag_base.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="414" src="https://docs.fivem.net/blips/radar_capture_the_flag_base_nobag.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="415" src="https://docs.fivem.net/blips/radar_weapon_jerrycan.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="417" src="https://docs.fivem.net/blips/radar_level_inside.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="418" src="https://docs.fivem.net/blips/radar_bounty_hit_inside.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="419" src="https://docs.fivem.net/blips/radar_capture_the_usaflag.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="420" src="https://docs.fivem.net/blips/radar_capture_the_usaflag_outline.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="421" src="https://docs.fivem.net/blips/radar_tank.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="422" src="https://docs.fivem.net/blips/radar_player_heli.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="423" src="https://docs.fivem.net/blips/radar_player_plane.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="424" src="https://docs.fivem.net/blips/radar_player_jet.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="426" src="https://docs.fivem.net/blips/radar_player_guncar.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="427" src="https://docs.fivem.net/blips/radar_player_boat.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="429" src="https://docs.fivem.net/blips/radar_temp_1.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="430" src="https://docs.fivem.net/blips/radar_temp_2.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="431" src="https://docs.fivem.net/blips/radar_temp_3.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="432" src="https://docs.fivem.net/blips/radar_temp_4.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="433" src="https://docs.fivem.net/blips/radar_temp_5.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="434" src="https://docs.fivem.net/blips/radar_temp_6.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="435" src="https://docs.fivem.net/blips/radar_race_stunt.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="436" src="https://docs.fivem.net/blips/radar_hot_property.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="437" src="https://docs.fivem.net/blips/radar_urbanwarfare_versus.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="438" src="https://docs.fivem.net/blips/radar_king_of_the_castle.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="439" src="https://docs.fivem.net/blips/radar_player_king.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="440" src="https://docs.fivem.net/blips/radar_dead_drop.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="441" src="https://docs.fivem.net/blips/radar_penned_in.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="442" src="https://docs.fivem.net/blips/radar_beast.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="444" src="https://docs.fivem.net/blips/radar_edge_crosstheline.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="446" src="https://docs.fivem.net/blips/radar_bennys.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="455" src="https://docs.fivem.net/blips/radar_yacht.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="456" src="https://docs.fivem.net/blips/radar_finders_keepers.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="457" src="https://docs.fivem.net/blips/radar_assault_package.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="458" src="https://docs.fivem.net/blips/radar_hunt_the_boss.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="459" src="https://docs.fivem.net/blips/radar_sightseer.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="460" src="https://docs.fivem.net/blips/radar_turreted_limo.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="483" src="https://docs.fivem.net/blips/radar_pickup_accelerator.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="484" src="https://docs.fivem.net/blips/radar_pickup_ghost.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="485" src="https://docs.fivem.net/blips/radar_pickup_detonator.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="486" src="https://docs.fivem.net/blips/radar_pickup_bomb.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="487" src="https://docs.fivem.net/blips/radar_pickup_armoured.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="488" src="https://docs.fivem.net/blips/radar_stunt.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="489" src="https://docs.fivem.net/blips/radar_weapon_lives.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="490" src="https://docs.fivem.net/blips/radar_stunt_premium.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="491" src="https://docs.fivem.net/blips/radar_adversary.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="492" src="https://docs.fivem.net/blips/radar_biker_clubhouse.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="493" src="https://docs.fivem.net/blips/radar_biker_caged_in.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="494" src="https://docs.fivem.net/blips/radar_biker_turf_war.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="495" src="https://docs.fivem.net/blips/radar_biker_joust.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="496" src="https://docs.fivem.net/blips/radar_production_weed.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="497" src="https://docs.fivem.net/blips/radar_production_crack.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="498" src="https://docs.fivem.net/blips/radar_production_fake_id.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="499" src="https://docs.fivem.net/blips/radar_production_meth.png" width="16" data-action="blipSelect">
+                                    <img class="m-1" height="16" data-ident="500" src="https://docs.fivem.net/blips/radar_production_money.png" width="16" data-action="blipSelect">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer p-0 m-0 text-center" id="formButtons">
+                            <div class="text-center" id="blipRequired" style="display:none;"><small><span class="text-danger">You need to select a blip</span></small></div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1">Blip ID</span>
+                                </div>
+                                <input type="number" min="1" max="1000" class="form-control" id="blipId" aria-label="Blip ID" aria-describedby="basic-addon1">
+                              </div>
+                            <button type="button" class="btn btn-sm btn-block btn-success closeBtnForm m-0" data-act="blipSelected">Select Blip</button>
+                            <button type="button" class="btn btn-sm btn-block btn-danger closeBtnForm m-0" data-act="closeMenu">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="colorPickerContainer" style="display:none; margin-top:80px">
+        <div class="row">
+            <div class="col-12">
+
+                <div id="formContents">
+                    <div class="card" id="colorDiv">
+                        <div class="card-header" id="colorTitle">
+                            Featured
+                        </div>
+                        <div class="card-body p-2"  style="max-height:600px; overflow-y:scroll;">
+                            <div class="container-fluid" id="colorContent">
+                                <div class="row">
+                                        <div class="col-12 rounded border border-dark p-2 text-center" id="selectedColor"><span class="p-1 text-light bg-dark rounded">SELECTED COLOR</span></div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-2 p-0 text-center my-auto">
+                                        <label for="r">R</label>
+                                    </div>
+                                    <div class="col-10 p-0 my-auto">
+                                        <input type="range" min="0" max="255" id="r" step="1" value="0" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-2 p-0 text-center my-auto">
+                                        <label for="g">G</label>
+                                    </div>
+                                    <div class="col-10 p-0 my-auto">
+                                        <input type="range" min="0" max="255" id="g" step="1" value="0" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-2 p-0 text-center my-auto">
+                                        <label for="b">B</label>
+                                    </div>
+                                    <div class="col-10 p-0 my-auto">
+                                        <input type="range" min="0" max="255" id="b" step="1" value="0" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">Predefined Colors</div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="255" data-g="255" data-b="255" style="background-color:rgb(255,255,255); border: 1px solid #000000; width:40%;">White</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="2" data-g="21" data-b="255" style="background-color:rgb(2,21,255); color:#ffffff; border: 1px solid #000000; width:40%;">Blue</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="3" data-g="83" data-b="255" style="background-color:rgb(3,83,255); color:#ffffff; border: 1px solid #000000; width:40%;">Electric Blue</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="0" data-g="255" data-b="140" style="background-color:rgb(0,255,140); border: 1px solid #000000; width:40%;">Mint Green</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="94" data-g="255" data-b="1" style="background-color:rgb(94,255,1); border: 1px solid #000000; width:40%;">Lime Green</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="255" data-g="255" data-b="0" style="background-color:rgb(255,255,0); border: 1px solid #000000; width:40%;">Yellow</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="255" data-g="150" data-b="0" style="background-color:rgb(255,150,0); border: 1px solid #000000; width:40%;">Golden Shower</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="255" data-g="62" data-b="0" style="background-color:rgb(255,62,0); border: 1px solid #000000; width:40%;">Orange</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="255" data-g="1" data-b="1" style="background-color:rgb(255,1,1); color:#ffffff; border: 1px solid #000000; width:40%;">Red</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="255" data-g="50" data-b="100" style="background-color:rgb(255,50,100); color:#ffffff; border: 1px solid #000000; width:40%;">Pony Pink</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="255" data-g="5" data-b="190" style="background-color:rgb(255,5,190); color:#ffffff; border: 1px solid #000000; width:40%;">Hot Pink</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="35" data-g="1" data-b="255" style="background-color:rgb(35,1,255); color:#ffffff; border: 1px solid #000000; width:40%;">Purple</button>
+                                        <button class="btn btn-sm m-1" data-action="predefinedColor" data-r="15" data-g="3" data-b="255" style="background-color:rgb(15,3,255); color:#ffffff; border: 1px solid #000000; width:40%;">Backlight</button>
+                                    </div>
+                                </div>
+                                <div class="row p-0">
+                                    <div class="col-6 text-center p-0"></div>
+                                    <div class="col-6 text-center p-0"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer p-0 m-0 text-center" id="formButtons">
+                            <div class="text-center text-primary" id="showButtonPress2" data-actionID="menuSwitcher" style="display:none;">PRESS <span class="text-dark">ENTER</span> TO USE IN-GAME MOUSE</div>
+                            <button class="btn btn-info" style="width:50%; border-radius:0px !important;" id="colorPreview">Preview Color</button><button class="btn btn-success"  style="width:50%; border-radius:0px !important;" id="colorSave">Save Color</button>
+                            <button type="button" class="btn btn-sm btn-block btn-danger closeBtnForm m-0" data-act="closeMenu">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="skinContainer" style="display:none; margin-top:80px;">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="max-width:350px; min-width:350px;">
+                    <div class="card-header" id="sliderTitle2">
+                        Featured
+                    </div>
+                    <div class="card-body text-center" style="max-height:600px; overflow-y:scroll;" id="skinMenuContents">
+
+                    </div>
+                    <div class="card-footer p-0 m-0 text-center">
+                        <div id="mouseMovementSkin" style="display:none;" class="text-center p-2"><small>PRESS [<span class="text-info">Z</span>] CONTROL CHARACTER</small></div>
+                        <div id="resetCamera" style="display:none;" class="text-center p-2"><small>PRESS [<span class="text-info">Z</span>] TO RESET CAMARA POSITION</small></div>
+                        <div id="swapKey" style="display:none;" class="text-center p-2"><small>PRESS [<span class="text-info">C</span>] TO TURN CHARACTER AROUND</small></div>
+                        <div id="allowHandsUp" style="display:none;" class="text-center p-2"><small>PRESS [<span class="text-info">X</span>] TO RAISE CHARACTER ARMS</small></div>
+                        <button type="button" class="btn btn-sm btn-block btn-danger closeBtnForm m-0" data-act="skinBack">Go Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="selectorContainer" style="display:none; margin-top:80px;">
+        <div class="row">
+            <div class="col-12">
+
+                <div id="formContents">
+                    <div class="card" style="max-width:350px; min-width:350px;">
+                        <div class="card-header" id="sliderTitle">
+                            Featured
+                        </div>
+                        <div class="card-body text-center" style="max-height:900px;">
+                            <div class="text-left" id="Sliderinformation"></div>
+                            <div class="mt-3 row pl-2 align-items-center text-center mx-auto">
+                                <button class="btn btn-dark m-1 btn-tab-prev" id="preBtn"><i class="fas fa-arrow-left"></i></button>
+                                <ul class="nav nav-tabs" id="selection" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active btn btn-secondary" style="min-width:180px;" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><small>Audi <i class="fad fa-search"></i></small></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-secondary" style="min-width:180px;" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" data-action="selectVehicle" data-model="bmw">BMW</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-secondary" style="min-width:180px;" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">FORD</a>
+                                </li>
+                                </ul>
+                                <button class="btn btn-dark m-1 btn-tab-next" id="nxtBtn"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                            <div class="row mt-3 mb-3" id="loading" style="display:none;"><div class="col-12 text-center">
+                                <div class="spinner-grow text-primary" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                                <div class="spinner-grow text-secondary" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                                <div class="spinner-grow text-success" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                                <div class="spinner-grow text-danger" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                                <div class="spinner-grow text-warning" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                                <div class="spinner-grow text-info" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                                <div class="spinner-grow text-light" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                                <div class="spinner-grow text-dark" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center text-dark">Loading...</div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer p-0 m-0 text-center">
+                            <div class="text-center text-primary" id="showButtonPress" data-actionID="menuSwitcher" style="display:none;">PRESS <span class="text-dark">ENTER</span> TO USE IN-GAME MOUSE</div>
+                            <button type="button" class="m-0 btn btn-block btn-sm btn-success submitBtnForm" style="display:none;" data-act="saveSlider" id="saveSliderButton">Confirm / Save</button>
+                            <button type="button" class="btn btn-sm btn-block btn-danger closeBtnForm m-0" data-act="justClose">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripting/external/jquery/jquery.js"></script>
+    <script src="scripting/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="pwmenu.js"></script>
+    </body>
+</html>

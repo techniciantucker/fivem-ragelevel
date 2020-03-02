@@ -1,0 +1,356 @@
+body{
+  position: relative;
+  z-index: -100;
+  overflow:hidden;
+  display: none;
+}
+
+@font-face {
+   font-family: 'elemental-end';
+   src: url('fonts/Elemental-End.ttf');
+}
+
+@font-face {
+  font-family: 'MuseoSans_900-webfont';
+  src: url('fonts/MuseoSans_900-webfont.ttf');
+}
+
+/*hud*/
+.hud-player {
+  position: absolute;
+  background: url(img/hud.png);
+  background-size: contain !important;
+  height: 100px;
+  transition-duration: 1s;
+  bottom:50px;
+  right: 5px;
+  z-index: 0;
+}
+
+#velocimetro{
+  position: absolute;
+  background: url(img/velo.png) no-repeat;
+  background-size: cover;
+  height: 200px;
+  display: none;
+  right:104px;
+  bottom:5px;
+}
+
+#barraDireita{
+  background: url(img/barraDireita.png) no-repeat;
+  background-size: contain;
+  /*transition-duration: 2s;*/
+  height: 107px;
+  width: 100px;
+  display: none;
+  position: absolute;
+  right:5px;
+  bottom:45px;
+}
+
+.items {
+  padding: 40px 15px 0px 15px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heartDiv {
+  margin-top: 7px;
+  background: url(img/heart.png) no-repeat;
+  background-size: contain;
+  background-position: left;
+  width: 100%;
+}
+.armorDiv {
+  margin-top: 17px;
+  background: url(img/armor.png) no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 100%;
+}
+
+.bar {
+  width: 155px;
+  height: 18px;
+  border-radius: 6px;
+  margin-left: 25px;
+}
+
+.life {
+    background: #484a52;
+}
+
+.life span {
+    background: rgba(72,74,82,0.5);
+    height: 100%;
+    border-radius: 6px;
+    display: block;
+    background-image: linear-gradient(to right, #9c3030, #ef5554);
+}
+.armor {
+  background: rgba(72,74,82,0.5);
+}
+
+.armor span {
+  height: 100%;
+  border-radius: 6px;
+  display: block;
+  background-image: linear-gradient(to right, #4a5e70, #5ba6eb);
+}
+
+
+/*Velocimetro*/
+
+
+
+.GaugeMeter{
+    Position: Relative;
+    Text-Align: Center;
+    Overflow: Hidden;
+    Cursor: Default;
+}
+
+.GaugeMeter SPAN,
+.GaugeMeter B{
+    Margin: 0 23%;
+    Width: 54%;
+    Position: Absolute;
+    Text-Align: Center;
+    Display: none;
+    Color: RGBa(255,255,255,.8);
+    Font-Weight: 100;
+    Font-Family: "Open Sans", Arial;
+    Overflow: Hidden;
+    White-Space: NoWrap;
+    Text-Overflow: Ellipsis;
+
+}
+.GaugeMeter[data-style="Semi"] B{
+    Margin: 0 10%;
+    Width: 80%;
+}
+
+.GaugeMeter S,
+.GaugeMeter U{
+    Text-Decoration:None;
+    Font-Size: .30em;
+    Font-Weight: 200;
+    Opacity: .6;
+}
+
+.GaugeMeter B{
+    Color: white;
+    Font-Weight: 200;
+    Font-Size: 0.85em;
+    Opacity: .8;
+}
+
+
+#cruise{
+  position: relative;
+  top: -150px;
+  width: 100%;
+  text-align: center;
+  color:white;
+  font-size:8px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+#kmph{
+  color:white;
+  position: relative;
+  margin-top:-150px;
+  align-content: center;
+  text-align: center;
+  /*margin-left: 80px;*/
+  z-index: 999;
+  font-family: 'elemental-end';
+
+}
+.velocidade{
+  font-size: 40px;
+}
+.km{
+  color:white;
+  position: relative;
+  font-size:10px;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: 'MuseoSans_900-webfont';
+
+}
+.cinto-iconred{
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  left: 46.8%;
+  top: -3%;
+  transform: translate(-50%);  
+  background: url(img/cinto0.png) no-repeat;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  -webkit-animation: fadeLoop 1s step-start infinite !important;
+  animation: fadeLoop 1s step-start infinite !important; 
+}
+.cinto-icongreen{
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  left: 46.8%;
+  top: -3%;
+  transform: translate(-50%);  
+  background: url(img/cinto2.png) no-repeat;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+}
+#gear{
+  align-content: center;
+  text-align: center;
+  font-size:15px;
+  position: relative;
+  margin-top:8px;
+  color: white;
+  font-family: 'elemental-end';
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);  
+}
+
+.gear{
+  padding:2px 6px;
+  text-align: center;
+  justify-content: center;
+}
+.gearActive{
+
+  border: 1px solid;
+  border-radius:6px; 
+}
+
+/*Barra Direita*/
+#gas{
+  position: absolute;
+  transform: rotate(180deg);
+  top: -25;
+  left: -25;
+}
+
+.gasDiv{
+  position:relative;
+  left:90px;
+  top:25px;
+  background-size: cover;
+  /*background: url(img/gasolina0.png) no-repeat;*/
+  height: 25px;
+  width: 25px;
+  left: 55%;
+  transform: translate(-50%);
+}
+.gasReserva{
+  -webkit-animation: fadeLoop 1s step-start infinite !important;
+  animation: fadeLoop 1s step-start infinite !important; 
+
+}
+.farol-icon{
+  position:relative;
+  left: 55%;
+  transform: translate(-50%);
+  top:15px;
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+}
+#setas{
+  position:relative;
+  left: 65%;
+  transform: translate(-50%);
+  top: 5px;
+  width: 80px;
+  height:20px;
+}
+.setaEsquerda{
+  width:25px;
+  height: 25px;
+  background: url(img/esquerda.png) no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.setaDireita{
+  width:25px;
+  height: 25px;
+  background: url(img/direita.png) no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.active{
+  -webkit-animation: fadeLoop 1s step-start infinite !important;
+  animation: fadeLoop 1s step-start infinite !important; 
+  
+  margin: 0px;
+}
+.setaPiscandoEsquerda{
+  width:25px;
+  height: 25px;
+  background: url(img/esquerda2.png) no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.setaPiscandoDireita{
+  width:25px;
+  height: 25px;
+  background: url(img/direita2.png) no-repeat;
+  background-size: cover;  
+  display: inline-block;
+}
+
+#dados{
+  margin-left: 50px;
+  color: white;
+  margin-top: 24px;
+  margin-bottom: 0px;
+  font-size: 10.5px;
+  font-family: 'elemental-end', sans-serif;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.8);
+}
+
+#voz{
+  position: relative;
+  color: white;
+  margin-top: -25px;
+  font-size: 9px;
+  font-family: 'elemental-end', sans-serif;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.8);
+  text-align: right;
+  align-content: center;
+  vertical-align: middle;
+}
+.microfone{
+  width: 20px;
+  margin-right: 2px;
+}
+#vozTexto{
+  float: right;
+}
+@-webkit-keyframes fadeLoop {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } 
+}
+@keyframes fadeLoop {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } 
+}

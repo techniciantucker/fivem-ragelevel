@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2650" />
+  <proxies>
+	<Item>brown_amfsted2_milo_</Item>
+    <Item>brown_amfsted3_milo_</Item>
+    <Item>brown_amfsted4_milo_</Item>
+    <Item>brown_amfsted_milo_</Item>
+    <Item>build1\hei_bh1_34_strm_0</Item>
+    <Item>build2\hei_cs1_11b_strm_1</Item>
+	</proxies>
+</SInteriorOrderData>

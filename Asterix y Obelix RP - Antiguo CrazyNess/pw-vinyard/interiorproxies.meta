@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4830" />
+  <proxies>
+	<Item>ch1_occl_03</Item>
+	<Item>int_italy2_milo_</Item>
+	<Item>italy</Item>
+	</proxies>
+</SInteriorOrderData>

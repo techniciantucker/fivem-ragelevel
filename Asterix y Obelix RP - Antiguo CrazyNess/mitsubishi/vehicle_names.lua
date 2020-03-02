@@ -1,0 +1,15 @@
+function AddTextEntry(key, value)
+	Citizen.InvokeNative(GetHashKey("ADD_TEXT_ENTRY"), key, value)
+end
+Citizen.CreateThread(function()
+    AddTextEntry('evo10', '2017 Mitsubishi Lancer Evolution') -- Enter Gamename from vehicles.lua and what you want it to display.
+    AddTextEntry('3000GT', '1999 Mitsubishi 3000 GT')
+    AddTextEntry('3000GTA', '1999 Mitsubishi 3000 GTA')
+    AddTextEntry('FAFSPYDER', 'F&F Mitsubishi Syder')
+    AddTextEntry('FNFLANCER', '2002 Mitsubishi Lancer')
+    AddTextEntry('LANCEREVOII', '2002 Mitsubishi Lancer 2F2F')
+    AddTextEntry('GTO', '2011 Mitsubishi GTO')
+    AddTextEntry('ECLIPSE', '2007 Mitsubishi Eclipse')
+    --AddTextEntry('', '')
+    --AddTextEntry('', '')
+end)

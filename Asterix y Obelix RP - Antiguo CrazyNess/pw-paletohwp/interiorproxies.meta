@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4230" />
+  <proxies>
+	<Item>cs1_16_interior_v_sheriff2_milo_</Item>
+    <Item>cs1_16_sheriff_cap</Item>
+    <Item>cs1_occl_07</Item>
+    <Item>cs1_occl_09</Item>
+    <Item>hei_cs1_16_interior_v_sheriff2_milo_</Item>
+    <Item>slb2k11_paleto_pd_milo_</Item>
+	</proxies>
+</SInteriorOrderData>

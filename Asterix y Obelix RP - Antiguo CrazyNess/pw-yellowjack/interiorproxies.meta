@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4490" />
+  <proxies>
+	<Item>lr_cs4_14_long_0</Item>
+    <Item>lr_cs4_14_strm_1</Item>
+    <Item>pw-yellowjack</Item>
+	</proxies>
+</SInteriorOrderData>

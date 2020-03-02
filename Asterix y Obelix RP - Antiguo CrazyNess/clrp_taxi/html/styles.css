@@ -1,0 +1,60 @@
+html {
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'taximeter';
+  src: url(taximeter.ttf)
+}
+
+#cursor {
+    position: absolute;
+    z-index: 99999999;
+    display: block;
+}
+
+.sans {
+  font-family: 'Roboto', sans-serif;
+}
+
+.taxifare {
+  font-size: 50px;
+  text-align: right;
+  background-color: #58111a;
+  font-family: 'taximeter';
+  src: url(taximeter.ttf)
+}
+
+h1,h2,h3,h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.full-screen {
+  width: 32%;
+  height: 100%;
+  position: absolute;
+  right: 225px;
+  bottom: -470px;
+  display: none;
+  align-items: center;
+}
+
+.taxi-container {
+  width: 60%;
+  border: 3px solid #222;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  display: block;
+  z-index: 9999999;
+}
+
+.body {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: none;
+}

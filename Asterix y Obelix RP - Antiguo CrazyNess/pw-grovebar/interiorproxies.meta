@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2760" />
+  <proxies>
+	<Item>pw-grovebar</Item>
+    <Item>pw-grovebaradditions</Item>
+	</proxies>
+</SInteriorOrderData>

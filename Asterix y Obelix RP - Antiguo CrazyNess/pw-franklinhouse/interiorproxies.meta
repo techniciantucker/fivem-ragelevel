@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2730" />
+  <proxies>
+	<Item>pw-enterhouse</Item>
+    <Item>pw-enterhouse2</Item>
+	</proxies>
+</SInteriorOrderData>

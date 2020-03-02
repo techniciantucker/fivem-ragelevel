@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2680" />
+  <proxies>
+	<Item>apa_ss1_07_long_0</Item>
+    <Item>brown_diner2_milo_</Item>
+    <Item>brown_diner_milo_</Item>
+    <Item>pw-dinerexterior</Item>
+	</proxies>
+</SInteriorOrderData>

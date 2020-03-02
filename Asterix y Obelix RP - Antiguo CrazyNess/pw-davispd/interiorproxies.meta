@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="5050" />
+  <proxies>
+	<Item>hei_sc1_occl_03</Item>
+	<Item>lr_sc1_occl_03</Item>
+	<Item>slb2k11_sheriff_davis</Item>
+	</proxies>
+</SInteriorOrderData>

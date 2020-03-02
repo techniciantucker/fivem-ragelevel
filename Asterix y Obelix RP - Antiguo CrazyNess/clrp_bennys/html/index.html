@@ -1,0 +1,50 @@
+﻿<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <img id="cursor" src="cursor.png">
+        <div id="impound-form">
+			<h1>Vehicle Purchase Form</h1>
+			<hr>
+			<div id="names" class="row">
+				<label>Buyer: </label>
+				<input id="owner" class="form-control" name="owner" placeholder="First & Lastname"/>
+			</div>
+			<div id="names" class="row"> 
+				<label>Buyer City ID: </label>
+				<input id="ownerid" class="form-control" name="owner" placeholder="City ID"/>
+			</div>
+			<div id="names" class="row">
+				<label>Seller: </label>
+				<input id="seller" class="form-control" name="seller" placeholder="First & Lastname"/>
+			</div>
+			<div id="fee-row">
+					<label>Price:</label>
+					<input type="number" id="price" class="form-control" name="fee" placeholder="Price $$$"/>
+			</div>
+			<div id="fee-row">
+					<label>Import Price:</label>
+					<input type="number" id="import_price" class="form-control" name="fee" placeholder="Price $$$"/>
+			</div>
+			<div class="form-group">
+				<label>Other / Notes: </label>
+				<textarea id="notes" class="form-control" name="reason" placeholder="Reason" rows="3"></textarea>
+			</div>
+			<hr>
+			<div id="errors">
+			</div>
+			<div id="actions">
+				<button class="btn cancel mr" id="cancel">Cancel</button>
+				<button class="btn success" id="confirmsale">Confirm</button>
+			</div>
+		</div>
+        <div id="newspaper">
+         <center>
+            <iframe src="https://capitalliferp.com/img/newspaper.png" height="80%" width="80%" frameborder="0"></iframe>
+         </center>
+        </div>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>

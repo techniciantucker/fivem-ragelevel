@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2620" />
+  <proxies>
+	<Item>dt1_23_strm_0</Item>
+    <Item>dt1_occl_04</Item>
+    <Item>dt1_rd1_strm_5</Item>
+    <Item>hei_dt1_23_strm_0</Item>
+    <Item>hei_dt1_occl_04</Item>
+    <Item>hei_dt1_rd1_strm_5</Item>
+    <Item>lr_cs4_13_strm_1</Item>
+    <Item>lr_sc1_13_strm_0</Item>
+    <Item>pw-chicken-exterior</Item>
+    <Item>pw-cluckingbell2_milo_</Item>
+    <Item>pw-cluckingbell3_milo_</Item>
+    <Item>pw-cluckingbell_milo_</Item>
+    <Item>sc1_13_strm_0</Item>
+	</proxies>
+</SInteriorOrderData>

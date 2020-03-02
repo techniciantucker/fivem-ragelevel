@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2700" />
+  <proxies>
+	<Item>dt1_occl_04</Item>
+    <Item>hei_cs1_11b</Item>
+    <Item>hei_cs1_11b_strm_4</Item>
+    <Item>hei_dt1_occl_04</Item>
+    <Item>hei_hw1_24_strm_0</Item>
+    <Item>lr_cs4_09_strm_1</Item>
+    <Item>pw-additions</Item>
+    <Item>pw-atm</Item>
+    <Item>pw-bennys</Item>
+    <Item>pw-freewaytrees</Item>
+    <Item>pw-jailreception</Item>
+    <Item>pw-jobcenter</Item>
+    <Item>pw-jobcenter2</Item>
+    <Item>pw-legion</Item>
+    <Item>pw-logo</Item>
+    <Item>pw-missionrowexterior</Item>
+    <Item>pw-paletoupgrades</Item>
+    <Item>pw-pdpumps</Item>
+    <Item>pw-sandyammunation</Item>
+    <Item>pw-sandyheli</Item>
+    <Item>pw-sandysheriff</Item>
+    <Item>pw-senora</Item>
+    <Item>pw-shittyaptfence</Item>
+    <Item>pw-spawn</Item>
+    <Item>pw-yogamats</Item>
+    <Item>rvcamp</Item>
+	</proxies>
+</SInteriorOrderData>

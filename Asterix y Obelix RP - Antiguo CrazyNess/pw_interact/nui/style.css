@@ -1,0 +1,104 @@
+body {
+    background: transparent !important;
+}
+
+.closeBtn {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.closeBtnForm {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.submitBtnForm {
+    border-radius: 0px !important;
+}
+
+.card-body {
+    z-index: initial !important;
+}
+
+.subMenuScroll::-webkit-scrollbar-track
+{
+    background-color: none;
+    border: none
+}
+
+.subMenuScroll::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: rgba(0, 0, 0, 1)
+}
+
+
+.subMenuScroll::-webkit-scrollbar-thumb
+{
+   background-color: rgba(255, 255, 255, 0.38);
+   border: 0px solid rgba(255, 255, 255, 0.38)
+}
+
+.card-body::-webkit-scrollbar-track
+{
+    background-color: none;
+    border: none
+}
+
+.card-body::-webkit-scrollbar
+{
+    width: 0px;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.card-body::-webkit-scrollbar-thumb
+ {
+    background-color: rgba(255, 255, 255, 0.38);
+    border: 0px solid rgba(255, 255, 255, 0.38)
+}
+
+.card {
+    background-color:rgba(255,255,255,0.8) !important;
+}
+
+.card-body::-webkit-scrollbar {
+    width: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color:transparent
+}
+
+#selection {  }
+#selection .nav-link { display:none } 
+#selection .nav-link { border:none !important; } 
+#selection .nav-link.active { display:block; }
+
+.multiSlider {  }
+.multiSlider .nav-link { display:none } 
+.multiSlider .nav-link { border:none !important; } 
+.multiSlider .nav-link.active { display:block; }
+
+fieldset{
+    border: none;
+    width:100%;
+  }
+  output{
+    display: inline-block;
+    min-width: 2.5em;
+  }
+  label, output{
+    padding: 2px 9px;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 1.1em;
+  }
+  label[for=r], output[for=r]{
+    background-color: #f00;
+  }
+  label[for=g], output[for=g]{
+    background-color: #0f0;
+  }
+  label[for=b], output[for=b]{
+    background-color: #00f;
+  }

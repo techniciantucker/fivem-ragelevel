@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="4260" />
+  <proxies>
+	<Item>pw-pawnshopvinewoodexterior</Item>
+    <Item>pw-pawnshopvinewood_milo_</Item>
+	</proxies>
+</SInteriorOrderData>

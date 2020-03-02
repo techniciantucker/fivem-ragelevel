@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2050" />
+  <proxies>
+	<Item>bahama_door_fix</Item>
+	<Item>clawles_int_placement</Item>
+	</proxies>
+</SInteriorOrderData>
